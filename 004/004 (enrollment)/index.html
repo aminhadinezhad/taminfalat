@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="assets/twbs-icons-dd5f3c4/font/bootstrap-icons.css"
+    />
+    <title>client</title>
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <div class="row g-0">
+        <div
+          class="sidebar-container col-lg-3 d-none d-lg-block position-sticky end-0 top-0 vh-100 pt-3 pb-3 ps-4 pe-4"
+        >
+          <div class="sidebar">
+            <div class="sidebar-logo">
+              <a href="#" class="">
+                <img src="assets/images/logo.png" class="img-fluid" alt="" />
+              </a>
+            </div>
+            <div class="sidebar-search">
+              <form
+                method="GET"
+                action="https://www.taminfalat.com/search"
+                role="form"
+                data-parsley-validate=""
+                novalidate=""
+              >
+                <input
+                  type="text"
+                  name="main_search"
+                  id="main_search1"
+                  autocomplete="off"
+                  placeholder="جستجو..."
+                  class="text-search"
+                  value=""
+                  data-parsley-id="4"
+                />
+              </form>
+              <i class="bi bi-search"></i>
+            </div>
+            <div class="sidebar-banner"></div>
+            <div class="sidebar-user d-flex justify-content-center">
+              <a href="#" title="پروفایل ">
+                <i
+                  class="bi bi-person-circle"
+                  title="ورود به داشبورد مشتری"
+                ></i>
+                <span>ورود / ثبت نام</span>
+              </a>
+            </div>
+            <div class="sidebar-cart">
+              <a href="#" title="سبد خرید">
+                <i class="bi bi-cart3"></i>
+                <span class="basket-count">0</span>
+              </a>
+            </div>
+            <div
+              class="sidebar-support d-flex justify-content-center align-items-center"
+            >
+              <a href="tel:02191001214" class="d-flex align-items-center">
+                <img
+                  src="assets/images/support.png"
+                  width="30"
+                  height="30"
+                  alt=""
+                />
+                <p class="m-0" style="font-size: 14px">پشتیبانی</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-9">
+          <header class="sticky-top d-none d-lg-block">
+            <a class="" href="#" target="_blank" id="festival-banner">
+              <div class="" style="padding-top: 3.125%; min-height: 40px">
+                <div class="position-absolute" style="inset: 0">
+                  <img
+                    loading="eager"
+                    src="assets/images/ad-banner.gif"
+                    width="1920"
+                    height="40"
+                    alt="festival-banner"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+              </div>
+            </a>
+          </header>
+          <main>
+            <div class="d-flex flex-column align-items-center gap-4">
+              <div class="d-flex justify-content-center">
+                <div class="buttons-wrapper d-flex rounded-pill p-1">
+                  <a
+                    href="../004 (register)/index.html"
+                    class="fw-semibold rounded-pill"
+                    id="natural"
+                    style="
+                      border: none;
+                      background-color: inherit;
+                      padding: 6px 12px;
+                      color: #7c9307;
+                      text-decoration: none;
+                    "
+                  >
+                    ثبت نام حقیقی
+                  </a>
+                  <a
+                    href=""
+                    class="fw-semibold rounded-pill"
+                    id="legal"
+                    style="
+                      background: #7c9307;
+                      color: #f6fae8;
+                      border: none;
+                      padding: 6px 12px;
+                      text-decoration: none;
+                    "
+                  >
+                    ثبت نام حقوقی
+                  </a>
+                </div>
+              </div>
+              <div class="">
+                <img src="assets/images/users.png" width="120" alt="" />
+              </div>
+              <div class="informations-wrapper">
+                <div class="info d-flex justify-content-center" id="natural">
+                  <div class="" style="width: 640px">
+                    <form method="POST" action="/api/register">
+                      <div
+                        class="mb-3"
+                        style="display: flex; flex-wrap: wrap; gap: 20px"
+                      >
+                        <div class="input-wrapper" style="flex: 1">
+                          <input
+                            type="text"
+                            name="company_name"
+                            placeholder=" "
+                            style="width: 100%"
+                            required
+                            oninvalid="
+                              this.setCustomValidity(
+                                'لطفاً نام کامل شرکت را وارد کنید',
+                              )
+                            "
+                            oninput="this.setCustomValidity('')"
+                          />
+                          <label
+                            >نام کامل شرکت<span class="required">*</span></label
+                          >
+                        </div>
+                        <div class="input-wrapper" style="flex: 1">
+                          <input
+                            type="text"
+                            name="company_national_code"
+                            placeholder=" "
+                            style="width: 100%"
+                            required
+                            oninvalid="
+                              this.setCustomValidity(
+                                'لطفاً شناسه ملی شرکت را وارد کنید',
+                              )
+                            "
+                            oninput="this.setCustomValidity('')"
+                          />
+                          <label
+                            >شناسه ملی شرکت<span class="required"
+                              >*</span
+                            ></label
+                          >
+                        </div>
+                      </div>
+
+                      <div
+                        class="mb-3"
+                        style="display: flex; flex-wrap: wrap; gap: 20px"
+                      >
+                        <div class="input-wrapper" style="flex: 1">
+                          <input
+                            type="text"
+                            name="company_fiscal_code"
+                            placeholder=" "
+                            style="width: 100%"
+                            required
+                            oninvalid="
+                              this.setCustomValidity(
+                                'لطفاً کد اقتصادی شرکت را وارد کنید',
+                              )
+                            "
+                            oninput="this.setCustomValidity('')"
+                          />
+                          <label
+                            >کد اقتصادی شرکت<span class="required"
+                              >*</span
+                            ></label
+                          >
+                        </div>
+                        <div class="input-wrapper" style="flex: 1">
+                          <input
+                            type="tel"
+                            name="mobile"
+                            placeholder=" "
+                            style="width: 100%"
+                            required
+                            oninvalid="
+                              this.setCustomValidity(
+                                'لطفاً شماره موبایل را وارد کنید',
+                              )
+                            "
+                            oninput="this.setCustomValidity('')"
+                          />
+                          <label
+                            >شماره موبایل<span class="required">*</span></label
+                          >
+                        </div>
+                      </div>
+
+                      <div
+                        class="mb-3"
+                        style="display: flex; flex-wrap: wrap; gap: 20px"
+                      >
+                        <div class="input-wrapper" style="flex: 1">
+                          <input
+                            type="tel"
+                            name="phone"
+                            placeholder=" "
+                            style="width: 100%"
+                            required
+                            oninvalid="
+                              this.setCustomValidity(
+                                'لطفاً شماره ثابت را وارد کنید',
+                              )
+                            "
+                            oninput="this.setCustomValidity('')"
+                          />
+                          <label
+                            >شماره ثابت<span class="required">*</span></label
+                          >
+                        </div>
+                        <div class="input-wrapper" style="flex: 1">
+                          <input
+                            type="text"
+                            name="postal_code"
+                            placeholder=" "
+                            style="width: 100%"
+                            required
+                            oninvalid="
+                              this.setCustomValidity(
+                                'لطفاً کد پستی را وارد کنید',
+                              )
+                            "
+                            oninput="this.setCustomValidity('')"
+                          />
+                          <label>کد پستی<span class="required">*</span></label>
+                        </div>
+                      </div>
+
+                      <div
+                        class="mb-3"
+                        style="display: flex; flex-wrap: wrap; gap: 20px"
+                      >
+                        <div class="input-wrapper" style="flex: 1">
+                          <input
+                            type="text"
+                            name="address"
+                            placeholder=" "
+                            style="width: 100%"
+                            required
+                            oninvalid="
+                              this.setCustomValidity('لطفاً نشانی را وارد کنید')
+                            "
+                            oninput="this.setCustomValidity('')"
+                          />
+                          <label>نشانی<span class="required">*</span></label>
+                        </div>
+                      </div>
+
+                      <div
+                        class="mb-3"
+                        style="display: flex; flex-wrap: wrap; gap: 20px"
+                      >
+                        <div class="input-wrapper" style="flex: 1">
+                          <input
+                            type="password"
+                            name="password"
+                            placeholder=" "
+                            style="width: 100%"
+                            required
+                            oninvalid="
+                              this.setCustomValidity(
+                                'لطفاً رمز عبور را وارد کنید',
+                              )
+                            "
+                            oninput="this.setCustomValidity('')"
+                          />
+                          <label>رمز عبور<span class="required">*</span></label>
+                        </div>
+                        <div class="input-wrapper" style="flex: 1">
+                          <input
+                            type="password"
+                            name="password_confirmation"
+                            placeholder=" "
+                            style="width: 100%"
+                            required
+                            oninvalid="
+                              this.setCustomValidity(
+                                'لطفاً تکرار رمز عبور را وارد کنید',
+                              )
+                            "
+                            oninput="this.setCustomValidity('')"
+                          />
+                          <label
+                            >تکرار رمز عبور<span class="required"
+                              >*</span
+                            ></label
+                          >
+                        </div>
+                      </div>
+
+                      <div
+                        class="mt-4"
+                        style="display: flex; justify-content: center"
+                      >
+                        <input
+                          type="submit"
+                          value="ثبت نام"
+                          style="
+                            padding: 5px 40px;
+                            font-weight: bold;
+                            font-size: 20px;
+                            border: 2px solid #a8cf45;
+                            color: #7c9307;
+                            outline: none;
+                            border-radius: 14px;
+                            background: none;
+                            cursor: pointer;
+                          "
+                        />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <div
+                  class="info d-none"
+                  id="legal"
+                  style="background-color: #f6fae8"
+                ></div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <header
+      class="d-lg-none position-fixed top-0 start-0 end-0"
+      style="z-index: 1030"
+    >
+      <div id="festival-banner-wrapper">
+        <a href="#" target="_blank" id="festival-banner">
+          <div>
+            <img
+              loading="eager"
+              src="assets/images/ad-banner.gif"
+              width="1920"
+              height="40"
+              alt="festival-banner"
+              class="w-100 d-block object-fit-cover"
+            />
+          </div>
+        </a>
+      </div>
+      <div class="topbar border-bottom">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="topbar-logo">
+            <a href="#">
+              <img src="assets/images/logo.png" alt="logo" />
+            </a>
+          </div>
+          <div class="topbar-search">
+            <button id="searchBtn">
+              <span id="searchText"></span>
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="bottombar fixed-bottom border-top border-2 d-lg-none">
+      <ul class="bottombar-nav">
+        <li class="bottom-nav-item active">
+          <a href="#" class="bottom-nav-link">
+            <i class="bi bi-house-door"></i>
+            <span>خانه</span>
+          </a>
+        </li>
+        <li class="bottom-nav-item">
+          <a href="" class="bottom-nav-link">
+            <i class="bi bi-grid"></i>
+            <span>دسته بندی</span>
+          </a>
+        </li>
+        <li class="bottom-nav-item">
+          <a href="" class="bottom-nav-link">
+            <i class="bi bi-cart3"></i>
+            <span>سبد خرید</span>
+          </a>
+        </li>
+        <li class="bottom-nav-item">
+          <a href="" class="bottom-nav-link">
+            <i class="bi bi-newspaper"></i>
+            <span>بلاگ</span>
+          </a>
+        </li>
+        <li class="bottom-nav-item">
+          <a href="" class="bottom-nav-link">
+            <i class="bi bi-person-circle"></i>
+            <span>ورود</span>
+          </a>
+        </li>
+      </ul>
+      <div
+        class="bottombar-support d-flex justify-content-center align-items-center"
+      >
+        <a href="tel:02191001214" class="d-flex align-items-center">
+          <img src="assets/images/support.png" width="30" height="30" alt="" />
+          <p class="m-0" style="font-size: 14px">پشتیبانی</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="search-overlay d-lg-none" id="searchOverlay">
+      <div class="search-overlay__content">
+        <div class="search-overlay__inputWrapper">
+          <form
+            method="GET"
+            action="https://www.taminfalat.com/search"
+            role="form"
+            data-parsley-validate=""
+            novalidate=""
+          >
+            <input
+              type="text"
+              name="main_search"
+              id="overlaySearchInput"
+              autocomplete="off"
+              placeholder="جستجو..."
+              class="search-overlay__input"
+              value=""
+              data-parsley-id="4"
+            />
+          </form>
+
+          <i class="bi bi-search"></i>
+        </div>
+        <button class="search-overlay__close" id="closeSearch">
+          <i class="bi bi-x"></i>
+        </button>
+      </div>
+      <div class="search-overlay__popular">
+        <div>
+          <p class="m-0 py-3">جستجوهای محبوب</p>
+        </div>
+        <div class="search-overlay__links">
+          <a class="search-overlay__link" href="#">دستمال کاغذی</a>
+          <a class="search-overlay__link" href="#">زونکن</a>
+          <a class="search-overlay__link" href="#">کاغذ A4</a>
+          <a class="search-overlay__link" href="#">قند</a>
+          <a class="search-overlay__link" href="#">کپی مکس</a>
+          <a class="search-overlay__link" href="#">مایع دستشویی</a>
+          <a class="search-overlay__link" href="#">چای</a>
+          <a class="search-overlay__link" href="#">خودکار</a>
+          <a class="search-overlay__link" href="#">کیسه زباله</a>
+          <a class="search-overlay__link" href="#">شکلات</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
