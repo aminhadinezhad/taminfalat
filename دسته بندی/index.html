@@ -1010,27 +1010,21 @@
             alt=""
           />
         </a>
-        <button class="menu-overlay__close" id="closeMenu">
+        <button class="menu-overlay__close-mobile" id="closeMenu">
           <i class="bi bi-x"></i>
         </button>
       </div>
       <div class="menu-overlay__content-mobile">
         <div class="row">
           <div class="col-3 p-0 border-start">
-            <div class="d-flex flex-column">
+            <div class="d-flex menu-overlay__btns-wrapper flex-column">
               <div
                 class="d-flex align-items-center border-bottom"
                 style="height: 120px"
               >
                 <button
-                  class="p-2 active"
-                  style="
-                    border: none;
-                    background: none;
-                    color: #414141;
-                    width: 100%;
-                    height: 100%;
-                  "
+                  class="p-2 menu-overlay__btn active"
+                  data-target="officeSuplies"
                 >
                   <div class="d-flex flex-column gap-1 align-items-center">
                     <img
@@ -1047,15 +1041,7 @@
                 class="d-flex align-items-center border-bottom"
                 style="height: 120px"
               >
-                <button
-                  class="p-2"
-                  style="
-                    border: none;
-                    background: none;
-                    color: #414141;
-                    width: 100%;
-                  "
-                >
+                <button class="p-2 menu-overlay__btn" data-target="cleaning">
                   <div class="d-flex flex-column gap-1 align-items-center">
                     <img
                       width="50px"
@@ -1071,15 +1057,7 @@
                 class="d-flex align-items-center border-bottom"
                 style="height: 120px"
               >
-                <button
-                  class="p-2"
-                  style="
-                    border: none;
-                    background: none;
-                    color: #414141;
-                    width: 100%;
-                  "
-                >
+                <button class="p-2 menu-overlay__btn" data-target="snacks">
                   <div class="d-flex flex-column gap-1 align-items-center">
                     <img
                       width="50px"
@@ -1095,15 +1073,7 @@
                 class="d-flex align-items-center border-bottom"
                 style="height: 120px"
               >
-                <button
-                  class="p-2"
-                  style="
-                    border: none;
-                    background: none;
-                    color: #414141;
-                    width: 100%;
-                  "
-                >
+                <button class="p-2 menu-overlay__btn" data-target="stationary">
                   <div class="d-flex flex-column gap-1 align-items-center">
                     <img
                       width="50px"
@@ -1118,9 +1088,12 @@
             </div>
           </div>
           <div class="col-9">
-            <ul class="top-menu-mobile row p-0 list-unstyled">
-              <li class="col-12 menu-content">
-                <ul class="p-0 list-unstyled d-flex flex-column gap-3">
+            <ul class="top-menu-mobile row list-unstyled pt-2">
+              <li class="col-12">
+                <ul
+                  class="menu-overlay__category p-0 list-unstyled d-flex flex-column gap-3"
+                  id="officeSuplies"
+                >
                   <li>
                     <a href="#">لوازم اداری</a>
                     <ul class="p-0 list-unstyled">
@@ -1160,7 +1133,10 @@
                     </ul>
                   </li>
                 </ul>
-                <ul class="p-0 list-unstyled d-none">
+                <ul
+                  class="menu-overlay__category p-0 list-unstyled d-flex flex-column gap-3 d-none"
+                  id="cleaning"
+                >
                   <li>
                     <a href="#">دستمال کاغذی</a>
                     <ul class="p-0 list-unstyled">
@@ -1219,7 +1195,10 @@
                     </ul>
                   </li>
                 </ul>
-                <ul class="p-0 list-unstyled d-none">
+                <ul
+                  class="menu-overlay__category p-0 list-unstyled d-flex flex-column gap-3 d-none"
+                  id="snacks"
+                >
                   <li>
                     <a href="#">نوشیدنی</a>
                     <ul class="p-0 list-unstyled">
@@ -1269,7 +1248,10 @@
                     </ul>
                   </li>
                 </ul>
-                <ul class="p-0 list-unstyled d-none">
+                <ul
+                  class="menu-overlay__category p-0 list-unstyled d-flex flex-column gap-3 d-none"
+                  id="stationary"
+                >
                   <li>
                     <a href="#">نوشت افزار</a>
                     <ul class="p-0 list-unstyled">

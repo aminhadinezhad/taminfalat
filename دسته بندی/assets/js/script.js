@@ -47,6 +47,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const menuBtnMobile = document.querySelector('.menu-btn-mobile');
   const closeMenu = document.getElementById('closeMenu');
   const menuOverlayMobile = document.getElementById('menuOverlayMobile');
+  const menuBtnsWrapper = document.querySelector('.menu-overlay__btns-wrapper');
+  const menuBtns = document.querySelectorAll('.menu-overlay__btn');
+  const menuCategories = document.querySelectorAll('.menu-overlay__category');
 
   let currentActiveItem = document.querySelector('.bottom-nav-item.active');
 
@@ -63,6 +66,28 @@ document.addEventListener('DOMContentLoaded', function () {
     menuOverlayMobile.classList.remove('active');
     document.body.classList.remove('overflow-hidden');
   });
+
+  if (menuBtnsWrapper) {
+    menuBtnsWrapper.addEventListener('click', e => {
+      const clickedBtn = e.target.closest('.menu-overlay__btn');
+      if (!clickedBtn) return;
+
+      menuBtns.forEach(btn => btn.classList.remove('active'));
+      clickedBtn.classList.add('active');
+
+      const targetId = clickedBtn.dataset.target;
+
+      menuCategories.forEach(cat => {
+        if (cat.id === targetId) {
+          cat.classList.remove('d-none');
+          cat.classList.add('d-flex');
+        } else {
+          cat.classList.add('d-none');
+          cat.classList.remove('d-flex');
+        }
+      });
+    });
+  }
 
   const slides = document.querySelectorAll('.banner-slide');
   const dots = document.querySelectorAll('.dot');
