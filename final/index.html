@@ -1,0 +1,1325 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="assets/twbs-icons-dd5f3c4/font/bootstrap-icons.css"
+    />
+    <title>client</title>
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <div class="row g-0">
+        <div
+          class="sidebar-container col-lg-3 d-none d-lg-block position-sticky end-0 top-0 vh-100 pt-3 pb-3 ps-4 pe-4"
+        >
+          <div class="sidebar">
+            <div class="sidebar-logo">
+              <a href="#" class="">
+                <img src="assets/images/logo.png" class="img-fluid" alt="" />
+              </a>
+            </div>
+            <div class="sidebar-search">
+              <form
+                method="GET"
+                action="https://www.taminfalat.com/search"
+                role="form"
+                data-parsley-validate=""
+                novalidate=""
+              >
+                <input
+                  type="text"
+                  name="main_search"
+                  id="main_search1"
+                  autocomplete="off"
+                  placeholder="جستجو..."
+                  class="text-search"
+                  value=""
+                  data-parsley-id="4"
+                />
+              </form>
+              <i class="bi bi-search"></i>
+            </div>
+            <div class="sidebar-banner"></div>
+            <div class="sidebar-user d-flex justify-content-center">
+              <a href="#" title="پروفایل ">
+                <i
+                  class="bi bi-person-circle"
+                  title="ورود به داشبورد مشتری"
+                ></i>
+                <span>ورود / ثبت نام</span>
+              </a>
+            </div>
+            <div class="sidebar-cart">
+              <a href="#" title="سبد خرید">
+                <i class="bi bi-cart3"></i>
+                <span class="basket-count">0</span>
+              </a>
+            </div>
+            <div
+              class="sidebar-support d-flex justify-content-center align-items-center"
+            >
+              <a href="tel:02191001214" class="d-flex align-items-center">
+                <img
+                  src="assets/images/support.png"
+                  width="30"
+                  height="30"
+                  alt=""
+                />
+                <p class="m-0" style="font-size: 14px">پشتیبانی</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-9 position-relative">
+          <div class="position-relative d-none d-lg-block" style="height: 50px">
+            <button class="menu-btn menu-btn--desktop d-none d-lg-block">
+              <i class="bi bi-list"></i>
+            </button>
+            <a class="" href="#" target="_blank" id="festival-banner">
+              <div class="">
+                <div class="position-absolute" style="inset: 0">
+                  <img
+                    loading="eager"
+                    src="assets/images/ad-banner.gif"
+                    width="1920"
+                    height="40"
+                    alt="festival-banner"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+              </div>
+            </a>
+          </div>
+          <main>
+            <div class="main-backdrop" id="mainBackdrop"></div>
+
+            <div class="menu-overlay d-none d-lg-block border" id="menuOverlay">
+              <div class="menu-overlay__content">
+                <div class="container">
+                  <div class="row justify-content-between">
+                    <div class="col-2">
+                      <div class="row gy-4">
+                        <div class="col-12">
+                          <a href="#">
+                            <img
+                              class="img-fluid"
+                              src="assets/images/1.png"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                        <div class="col-12">
+                          <a href="#">
+                            <img
+                              class="img-fluid"
+                              src="assets/images/2.png"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                        <div class="col-12">
+                          <a href="#">
+                            <img
+                              class="img-fluid"
+                              src="assets/images/3.png"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                        <div class="col-12">
+                          <a href="#">
+                            <img
+                              class="img-fluid"
+                              src="assets/images/4.png"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-9">
+                      <ul class="top-menu row p-0 list-unstyled">
+                        <li class="col-3">
+                          <ul
+                            class="p-0 list-unstyled d-flex flex-column gap-4"
+                          >
+                            <li>
+                              <a href="#">لوازم اداری</a>
+                              <ul class="p-0 list-unstyled">
+                                <li>
+                                  <a href="#">خط کش و پرگار</a>
+                                </li>
+                                <li><a href="#">سطل، زیر پایی</a></li>
+                                <li><a href="#">ماشین حساب</a></li>
+                                <li><a href="#">کتابخانه اداری</a></li>
+                                <li><a href="#">آلبوم و جا کارتی</a></li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a href="#">لوازم جانبی</a>
+                              <ul class="p-0 list-unstyled">
+                                <li>
+                                  <a href="#">کارتریج، تونر</a>
+                                </li>
+                                <li><a href="#">سی دی، دی وی دی</a></li>
+                                <li>
+                                  <a href="#">پد موس، زیر مانیتوری</a>
+                                </li>
+                                <li><a href="#">باطری</a></li>
+                                <li><a href="#">فلش مموری</a></li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a href="#">میز و صندلی</a>
+                              <ul class="p-0 list-unstyled">
+                                <li>
+                                  <a href="#">کارشناسی</a>
+                                </li>
+                                <li><a href="#">مدیریتی</a></li>
+                                <li><a href="#">میز پیشخوان</a></li>
+                                <li><a href="#">میز منشی</a></li>
+                                <li><a href="#">صندلی</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="col-3">
+                          <ul
+                            class="p-0 list-unstyled d-flex flex-column gap-4"
+                          >
+                            <li>
+                              <a href="#">دستمال کاغذی</a>
+                              <ul class="p-0 list-unstyled">
+                                <li>
+                                  <a href="#">دستمال رومیزی</a>
+                                </li>
+                                <li><a href="#">دستمال حوله ای</a></li>
+                                <li><a href="#">دستمال توالت</a></li>
+                                <li><a href="#">دستمال مخزنی</a></li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a href="#">انواع شوینده</a>
+                              <ul class="p-0 list-unstyled">
+                                <li>
+                                  <a href="#">مایع دستشویی</a>
+                                </li>
+                                <li><a href="#">مایع ظرفشویی</a></li>
+                                <li>
+                                  <a href="#">شیشه شوی</a>
+                                </li>
+                                <li><a href="#">جرمگیر، سفید کننده</a></li>
+                                <li><a href="#">پودر ماشینی، پودر دستی</a></li>
+                                <li><a href="#">پاک کننده سطوح</a></li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a href="#">ملزومات نظافت</a>
+                              <ul class="p-0 list-unstyled">
+                                <li>
+                                  <a href="#">خوشبو کننده هوا</a>
+                                </li>
+                                <li><a href="#">دستمال تنطیف</a></li>
+                                <li><a href="#">تی، جارو، فرچه</a></li>
+                                <li><a href="#">قرص و پد توالت فرنگی</a></li>
+                                <li><a href="#">اسکاچ، ابر، سیم</a></li>
+                                <li><a href="#">لوله باز کن</a></li>
+                                <li><a href="#">ضدعفونی کننده</a></li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a href="#">یکبار مصرف</a>
+                              <ul class="p-0 list-unstyled">
+                                <li>
+                                  <a href="#">دستکش</a>
+                                </li>
+                                <li>
+                                  <a href="#">کیسه زباله</a>
+                                </li>
+                                <li><a href="#">سفره</a></li>
+                                <li><a href="#">کیسه فریزر</a></li>
+                                <li><a href="#">ماسک</a></li>
+                                <li><a href="#">لیوان یکبار مصرف</a></li>
+                                <li><a href="#">ظروف یکبار مصرف</a></li>
+                                <li><a href="#">نایلکس دسته دار</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="col-3">
+                          <ul
+                            class="p-0 list-unstyled d-flex flex-column gap-4"
+                          >
+                            <li>
+                              <a href="#">نوشیدنی</a>
+                              <ul class="p-0 list-unstyled">
+                                <li>
+                                  <a href="#">قهوه و نسکافه</a>
+                                </li>
+                                <li><a href="#">چای سیاه</a></li>
+                                <li><a href="#">آب معدنی</a></li>
+                                <li><a href="#">شربت</a></li>
+                                <li><a href="#">دمنوش</a></li>
+                                <li><a href="#">آب میوه</a></li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a href="#">بیسکویت و تنقلات</a>
+                              <ul class="p-0 list-unstyled">
+                                <li><a href="#">بیسکویت ساده</a></li>
+                                <li>
+                                  <a href="#">بیسکویت شکلاتی</a>
+                                </li>
+                                <li><a href="#">بیسکویت طعم دار</a></li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a href="#">قند، شکر، نبات، روغن</a>
+                              <ul class="p-0 list-unstyled">
+                                <li>
+                                  <a href="#">قند</a>
+                                </li>
+                                <li><a href="#">شکر</a></li>
+                                <li><a href="#">روغن</a></li>
+                                <li><a href="#">نبات</a></li>
+                                <li>
+                                  <a href="#">برنج</a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a href="#">طعم دهنده</a>
+                              <ul class="p-0 list-unstyled">
+                                <li>
+                                  <a href="#">نمک</a>
+                                </li>
+                                <li><a href="#">سماق</a></li>
+                                <li><a href="#">فلفل</a></li>
+                                <li><a href="#">رب</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="col-3">
+                          <ul
+                            class="p-0 list-unstyled d-flex flex-column gap-4"
+                          >
+                            <li>
+                              <a href="#">نوشت افزار</a>
+                              <ul class="p-0 list-unstyled">
+                                <li>
+                                  <a href="#">خودکار و روان نویس</a>
+                                </li>
+                                <li><a href="#">لاک غلط گیر</a></li>
+                                <li><a href="#">پاک کن، تراش</a></li>
+                                <li><a href="#">ماژیک</a></li>
+                                <li><a href="#">مداد</a></li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a href="#">انواع کاغذ</a>
+                              <ul class="p-0 list-unstyled">
+                                <li>
+                                  <a href="#">کاغذ (A4, A3, A5)</a>
+                                </li>
+                                <li><a href="#">پاکت کاغذی</a></li>
+                                <li>
+                                  <a href="#">استیک نوت</a>
+                                </li>
+                                <li><a href="#">دفتر اداری</a></li>
+                                <li><a href="#">رول حرارتی</a></li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a href="#">نظم دهنده</a>
+                              <ul class="p-0 list-unstyled">
+                                <li>
+                                  <a href="#">زونکن اداری</a>
+                                </li>
+                                <li><a href="#">کارتابل</a></li>
+                                <li><a href="#">کازیه</a></li>
+                                <li><a href="#">پایه چسب و جاسوزنی</a></li>
+                                <li>
+                                  <a href="#">جای قلم، یادداشت و زیر تقویمی</a>
+                                </li>
+                                <li><a href="#">تقویم، سررسید</a></li>
+                                <li><a href="#">پوشه، کاور، کلیربوک</a></li>
+                                <li><a href="#">کلاسور</a></li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a href="#">ابزار تحریر</a>
+                              <ul class="p-0 list-unstyled">
+                                <li>
+                                  <a href="#">طلق و شیرازه</a>
+                                </li>
+                                <li><a href="#">منگنه و سوزن</a></li>
+                                <li><a href="#">قیچی و کاتر</a></li>
+                                <li><a href="#">گیره، کلیپس، مگنت</a></li>
+                                <li>
+                                  <a href="#">استامپ، جوهر، کاربن</a>
+                                </li>
+                                <li><a href="#">پانچ و سوزن کش</a></li>
+                                <li><a href="#">چسب</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <section id="banners-section" class="banners">
+              <div class="banner-slider-container">
+                <div class="banner-slider">
+                  <div class="banner-slide active">
+                    <a href="">
+                      <img
+                        src="assets/images/NCyymkfLOMkIXYwcoDCw.jpg"
+                        alt="بنر 1"
+                      />
+                    </a>
+                  </div>
+                  <div class="banner-slide">
+                    <a
+                      href="https://www.taminfalat.com/post/%DA%86%D8%A7%D9%BE-%D8%A7%D8%AE%D8%AA%D8%B5%D8%A7%D8%B5%DB%8C-%D8%B1%D9%88%DB%8C-%D9%84%DB%8C%D9%88%D8%A7%D9%86-%DB%8C%DA%A9%D8%A8%D8%A7%D8%B1-%D9%85%D8%B5%D8%B1%D9%81-"
+                    >
+                      <img
+                        src="assets/images/lwgHytOxygZDddWdSXhi.jpg"
+                        alt="بنر 2"
+                      />
+                    </a>
+                  </div>
+                  <div class="banner-slide">
+                    <a
+                      href="https://www.taminfalat.com/categorylist/%D9%84%D9%88%D8%A7%D8%B2%D9%85-%D8%AA%D8%AD%D8%B1%DB%8C%D8%B1-1"
+                    >
+                      <img
+                        src="assets/images/sNveEorBmyfFFXMcANJO.jpg"
+                        alt="بنر 3"
+                      />
+                    </a>
+                  </div>
+                  <div class="banner-slide">
+                    <a
+                      href="https://www.taminfalat.com/categorylist/%D8%AE%D9%88%D8%B1%D8%A7%DA%A9%DB%8C-%D9%87%D8%A7%DB%8C-%D8%A7%D8%AF%D8%A7%D8%B1%DB%8C"
+                    >
+                      <img
+                        src="assets/images/qEsPwBAFNlnhZJDZmTNM.jpg"
+                        alt="بنر 4"
+                      />
+                    </a>
+                  </div>
+                </div>
+
+                <div class="banner-dots">
+                  <span class="dot active" data-slide="0"></span>
+                  <span class="dot" data-slide="1"></span>
+                  <span class="dot" data-slide="2"></span>
+                  <span class="dot" data-slide="3"></span>
+                </div>
+
+                <button class="banner-arrow banner-arrow-prev">
+                  <i class="bi bi-chevron-right"></i>
+                </button>
+                <button class="banner-arrow banner-arrow-next">
+                  <i class="bi bi-chevron-left"></i>
+                </button>
+              </div>
+            </section>
+            <section class="categories" id="categories-section">
+              <div class="category-slider-wrapper position-relative">
+                <div class="category-slider d-flex overflow-auto">
+                  <div class="category-item px-3">
+                    <a
+                      href="https://www.taminfalat.com/categorylist/%D8%AF%D8%B3%D8%AA%D9%85%D8%A7%D9%84-%D9%88-%D8%AD%D9%88%D9%84%D9%87"
+                      class="text-decoration-none"
+                    >
+                      <img
+                        width="160px"
+                        height="160px"
+                        src="assets/images/dastmal.png"
+                        alt=""
+                      />
+                      <span>دستمال کاغذی</span>
+                    </a>
+                  </div>
+                  <div class="category-item px-3">
+                    <a
+                      href="https://www.taminfalat.com/categorylist/%D9%85%D8%A7%DB%8C%D8%B9-%D8%AF%D8%B3%D8%AA%D8%B4%D9%88%DB%8C%DB%8C-1"
+                      class="text-decoration-none"
+                    >
+                      <img
+                        width="160px"
+                        height="160px"
+                        src="assets/images/maye-dast.png"
+                        alt=""
+                      />
+                      <span>مایع دستشویی</span>
+                    </a>
+                  </div>
+                  <div class="category-item px-3">
+                    <a
+                      href="https://www.taminfalat.com/categorylist/%D9%85%D8%A7%DB%8C%D8%B9-%D8%B8%D8%B1%D9%81%D8%B4%D9%88%DB%8C%DB%8C"
+                      class="text-decoration-none"
+                    >
+                      <img
+                        width="160px"
+                        height="160px"
+                        src="assets/images/zarfshooi.png"
+                        alt=""
+                      />
+                      <span>مایع ظرفشویی</span>
+                    </a>
+                  </div>
+                  <div class="category-item px-3">
+                    <a
+                      href="https://www.taminfalat.com/categorylist/%DA%86%D8%A7%DB%8C-%D8%B3%DB%8C%D8%A7%D9%87-1"
+                      class="text-decoration-none"
+                    >
+                      <img
+                        width="160px"
+                        height="160px"
+                        src="assets/images/chay.png"
+                        alt=""
+                      />
+                      <span>چای</span>
+                    </a>
+                  </div>
+                  <div class="category-item px-3">
+                    <a
+                      href="https://www.taminfalat.com/categorylist/%D9%82%D9%86%D8%AF"
+                      class="text-decoration-none"
+                    >
+                      <img
+                        width="160px"
+                        height="160px"
+                        src="assets/images/ghand.png"
+                        alt=""
+                      />
+                      <span>قند</span>
+                    </a>
+                  </div>
+                  <div class="category-item px-3">
+                    <a
+                      href="https://www.taminfalat.com/categorylist/%D9%82%D9%87%D9%88%D9%87-%D9%88-%D9%86%D8%B3%DA%A9%D8%A7%D9%81%D9%87-1"
+                      class="text-decoration-none"
+                    >
+                      <img
+                        width="160px"
+                        height="160px"
+                        src="assets/images/ghahve.png"
+                        alt=""
+                      />
+                      <span>قهوه و نسکافه</span>
+                    </a>
+                  </div>
+                  <div class="category-item px-3">
+                    <a
+                      href="https://www.taminfalat.com/categorylist/%DA%A9%D8%A7%D8%BA%D8%B0-%D8%A7%D8%AF%D8%A7%D8%B1%DB%8C-1"
+                      class="text-decoration-none"
+                    >
+                      <img
+                        width="160px"
+                        height="160px"
+                        src="assets/images/kaghaz.png"
+                        alt=""
+                      />
+                      <span>کاغذ (A4,A3,A5)</span>
+                    </a>
+                  </div>
+                  <div class="category-item px-3">
+                    <a
+                      href="https://www.taminfalat.com/categorylist/%D8%AE%D9%88%D8%AF%DA%A9%D8%A7%D8%B1-%D9%85%D8%AF%D8%A7%D8%AF-%D8%B1%D9%88%D8%A7%D9%86-%D9%86%D9%88%DB%8C%D8%B3-%D9%85%D8%A7%DA%98%DB%8C%DA%A9"
+                      class="text-decoration-none"
+                    >
+                      <img
+                        width="160px"
+                        height="160px"
+                        src="assets/images/khodkar.png"
+                        alt=""
+                      />
+                      <span>خودکار و روان نویس</span>
+                    </a>
+                  </div>
+                  <div class="category-item px-3">
+                    <a
+                      href="https://www.taminfalat.com/categorylist/%D8%AF%D9%81%D8%AA%D8%B1-%D8%AF%D9%81%D8%AA%D8%B1-%DB%8C%D8%A7%D8%AF%D8%AF%D8%A7%D8%B4%D8%AA-%D8%A7%D8%B3%D8%AA%DB%8C%DA%A9-%D9%86%D9%88%D8%AA"
+                      class="text-decoration-none"
+                    >
+                      <img
+                        width="160px"
+                        height="160px"
+                        src="assets/images/stick-note.png"
+                        alt=""
+                      />
+                      <span>استیک نوت</span>
+                    </a>
+                  </div>
+                  <div class="category-item px-3">
+                    <a
+                      href="https://www.taminfalat.com/categorylist/%D8%B2%D9%88%D9%86%DA%A9%D9%86-%DA%A9%D9%84%D8%A7%D8%B3%D9%88%D8%B1-%D9%BE%D9%88%D8%B4%D9%87-%DA%A9%D8%A7%D9%88%D8%B1-%DA%A9%D9%84%DB%8C%D8%B1%D8%A8%D9%88%DA%A9-1"
+                      class="text-decoration-none"
+                    >
+                      <img
+                        width="160px"
+                        height="160px"
+                        src="assets/images/zonkan.png"
+                        alt=""
+                      />
+                      <span>زونکن اداری</span>
+                    </a>
+                  </div>
+                  <div class="category-item px-3">
+                    <a
+                      href="https://www.taminfalat.com/categorylist/%D8%AF%D8%B3%D8%AA%D9%85%D8%A7%D9%84-%D9%86%D8%B8%D8%A7%D9%81%D8%AA"
+                      class="text-decoration-none"
+                    >
+                      <img
+                        width="160px"
+                        height="160px"
+                        src="assets/images/tanzif.png"
+                        alt=""
+                      />
+                      <span>دستمال تنظیف</span>
+                    </a>
+                  </div>
+                  <div class="category-item px-3">
+                    <a
+                      href="https://www.taminfalat.com/categorylist/%DA%A9%DB%8C%D8%B3%D9%87-%D8%B2%D8%A8%D8%A7%D9%84%D9%87-1"
+                      class="text-decoration-none"
+                    >
+                      <img
+                        width="160px"
+                        height="160px"
+                        src="assets/images/kisezobale.png"
+                        alt=""
+                      />
+                      <span>کیسه زباله</span>
+                    </a>
+                  </div>
+                </div>
+                <button class="category-arrow category-arrow-prev" disabled>
+                  <i class="bi bi-chevron-right"></i>
+                </button>
+
+                <button class="category-arrow category-arrow-next">
+                  <i class="bi bi-chevron-left"></i>
+                </button>
+              </div>
+            </section>
+
+            <div class="container-fluid">
+              <section class="features" id="features-section">
+                <div class="features-container d-flex justify-content-center">
+                  <div class="d-flex gap-4">
+                    <div class="feature">
+                      <img
+                        width="110px"
+                        height="110px"
+                        src="assets/images/return.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="feature">
+                      <img
+                        width="110px"
+                        height="110px"
+                        src="assets/images/authenticity.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="feature">
+                      <img
+                        width="110px"
+                        height="110px"
+                        src="assets/images/pay.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="feature">
+                      <img
+                        width="110px"
+                        height="110px"
+                        src="assets/images/delivery.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section id="product-card-section" class="product-cards">
+                <div class="container">
+                  <div class="row justify-content-center gy-4">
+                    <div class="col-lg-4 col-6">
+                      <div class="product-card">
+                        <div class="product-card-image">
+                          <img src="assets/images/cups.png" alt="" />
+                          <div class="product-card-overlay">
+                            <a href="#" class="btn-view-products"
+                              >مشاهده محصولات</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-6">
+                      <div class="product-card">
+                        <div class="product-card-image">
+                          <img src="assets/images/cups.png" alt="" />
+                          <div class="product-card-overlay">
+                            <a href="#" class="btn-view-products"
+                              >مشاهده محصولات</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-6">
+                      <div class="product-card">
+                        <div class="product-card-image">
+                          <img src="assets/images/cups.png" alt="" />
+                          <div class="product-card-overlay">
+                            <a href="#" class="btn-view-products"
+                              >مشاهده محصولات</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section id="widget" class="widget">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="widget-2-box">
+                        <a href="https://www.instagram.com/taminfalat/">
+                          <img
+                            src="assets/images/insta-taminfalat.jpg"
+                            class="img-fluid widget-2-image"
+                            alt="اینستاگرام"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section id="kitchen-section" class="kitchen">
+                <div class="container">
+                  <div
+                    class="row justify-content-center align-items-stretch gy-3"
+                  >
+                    <div class="col-lg-6 cups">
+                      <div
+                        class="h-100 p-4 align-items-center d-flex rounded"
+                        style="background: #eeeae7"
+                      >
+                        <div class="row align-items-center">
+                          <div class="col-6">
+                            <p class="fw-semibold mb-2">کیفیت در دستان شما</p>
+                            <p class="fw-semibold" style="font-size: 24px">
+                              لیوان‌های کاغذی، پلاستیکی و گیاهی
+                            </p>
+                            <a
+                              href="https://www.taminfalat.com/categorylist/%D9%84%DB%8C%D9%88%D8%A7%D9%86-%DB%8C%DA%A9%D8%A8%D8%A7%D8%B1-%D9%85%D8%B5%D8%B1%D9%81"
+                              class="btn btn-md btn-dark text-light rounded-pill"
+                            >
+                              مشاهده محصولات
+                            </a>
+                          </div>
+
+                          <div class="col-6">
+                            <img
+                              class="img-fluid"
+                              src="assets/images/cups.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="row">
+                        <div class="col-12 spices">
+                          <div
+                            style="background-color: #e3edf6"
+                            class="p-4 mb-3 rounded"
+                          >
+                            <div class="row align-items-center">
+                              <div class="col-6">
+                                <p
+                                  class="fw-semibold mb-2"
+                                  style="font-size: 15px"
+                                >
+                                  عطر و طعم بی نظیر
+                                </p>
+                                <p class="fw-semibold" style="font-size: 22px">
+                                  بهترین ادویه‌ها و چاشنی‌ها
+                                </p>
+                                <a
+                                  href="https://www.taminfalat.com/categorylist/%D8%B7%D8%B9%D9%85-%D8%AF%D9%87%D9%86%D8%AF%D9%87-1"
+                                  class="btn btn-sm btn-dark text-light rounded-pill"
+                                >
+                                  مشاهده محصولات
+                                </a>
+                              </div>
+                              <div class="col-6">
+                                <img
+                                  class="img-fluid"
+                                  src="assets/images/spices.png"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="row">
+                            <div class="col-lg-6 col-6 tablecloth">
+                              <div
+                                class="text-center p-3 rounded"
+                                style="background-color: #f4ebec"
+                              >
+                                <p
+                                  class="fw-semibold mb-2"
+                                  style="font-size: 14px"
+                                >
+                                  میزبانی آسان و شیک
+                                </p>
+                                <p class="fw-semibold mb-2 text-center">
+                                  انواع سفره یکبار مصرف با کیفیت
+                                </p>
+                                <a
+                                  href="https://www.taminfalat.com/categorylist/%D8%B3%D9%81%D8%B1%D9%87-%D9%84%DB%8C%D9%88%D8%A7%D9%86"
+                                  class="text-dark fw-semibold"
+                                  style="font-size: 14px"
+                                >
+                                  مشاهده محصولات
+                                </a>
+
+                                <div class="p-4">
+                                  <img
+                                    class="img-fluid"
+                                    src="assets/images/tablecloth.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-6 tableware">
+                              <div
+                                class="text-center p-3 rounded"
+                                style="background-color: #f8f4f1"
+                              >
+                                <p
+                                  class="fw-semibold mb-2"
+                                  style="font-size: 14px"
+                                >
+                                  بهداشتی و آماده پذیرایی
+                                </p>
+                                <p class="fw-semibold text-center mb-2">
+                                  انواع ظروف یکبار مصرف با کیفیت
+                                </p>
+                                <a
+                                  href="https://www.taminfalat.com/categorylist/%D8%B8%D8%B1%D9%88%D9%81-%DB%8C%DA%A9%D8%A8%D8%A7%D8%B1-%D9%85%D8%B5%D8%B1%D9%81-2"
+                                  class="text-dark fw-semibold"
+                                  style="font-size: 14px"
+                                >
+                                  مشاهده محصولات
+                                </a>
+
+                                <div class="p-4">
+                                  <img
+                                    class="img-fluid"
+                                    src="assets/images/tableware.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </main>
+
+          <footer></footer>
+        </div>
+      </div>
+    </div>
+
+    <header
+      class="d-lg-none position-fixed top-0 start-0 end-0"
+      style="z-index: 1030"
+    >
+      <div id="festival-banner-wrapper">
+        <a href="#" target="_blank" id="festival-banner">
+          <div>
+            <img
+              loading="eager"
+              src="assets/images/ad-banner.gif"
+              width="1920"
+              height="40"
+              alt="festival-banner"
+              class="w-100 d-block object-fit-cover"
+            />
+          </div>
+        </a>
+      </div>
+      <div class="topbar border-bottom">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="topbar-logo">
+            <a href="#">
+              <img src="assets/images/logo.png" alt="logo" />
+            </a>
+          </div>
+          <div class="topbar-search">
+            <button id="searchBtn">
+              <span id="searchText"></span>
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="bottombar fixed-bottom border-top border-2 d-lg-none">
+      <ul class="bottombar-nav">
+        <li class="bottom-nav-item active">
+          <a href="#" class="bottom-nav-link">
+            <i class="bi bi-house-door"></i>
+            <span>خانه</span>
+          </a>
+        </li>
+        <li class="bottom-nav-item menu-btn-mobile-item">
+          <button class="bottom-nav-link menu-btn-mobile">
+            <i class="bi bi-grid"></i>
+            <span>دسته بندی</span>
+          </button>
+        </li>
+        <li class="bottom-nav-item">
+          <a href="" class="bottom-nav-link">
+            <i class="bi bi-cart3"></i>
+            <span>سبد خرید</span>
+          </a>
+        </li>
+        <li class="bottom-nav-item">
+          <a href="" class="bottom-nav-link">
+            <i class="bi bi-newspaper"></i>
+            <span>بلاگ</span>
+          </a>
+        </li>
+        <li class="bottom-nav-item">
+          <a href="" class="bottom-nav-link">
+            <i class="bi bi-person-circle"></i>
+            <span>ورود</span>
+          </a>
+        </li>
+      </ul>
+      <div
+        class="bottombar-support d-flex justify-content-center align-items-center"
+      >
+        <a href="tel:02191001214" class="d-flex align-items-center">
+          <img src="assets/images/support.png" width="30" height="30" alt="" />
+          <p class="m-0" style="font-size: 14px">پشتیبانی</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="search-overlay d-lg-none" id="searchOverlay">
+      <div class="search-overlay__content">
+        <div class="search-overlay__inputWrapper">
+          <form
+            method="GET"
+            action="https://www.taminfalat.com/search"
+            role="form"
+            data-parsley-validate=""
+            novalidate=""
+          >
+            <input
+              type="text"
+              name="main_search"
+              id="overlaySearchInput"
+              autocomplete="off"
+              placeholder="جستجو..."
+              class="search-overlay__input"
+              value=""
+              data-parsley-id="4"
+            />
+          </form>
+
+          <i class="bi bi-search"></i>
+        </div>
+        <button class="search-overlay__close" id="closeSearch">
+          <i class="bi bi-x"></i>
+        </button>
+      </div>
+      <div class="search-overlay__popular">
+        <div>
+          <p class="m-0 py-3">جستجوهای محبوب</p>
+        </div>
+        <div class="search-overlay__links">
+          <a class="search-overlay__link" href="#">دستمال کاغذی</a>
+          <a class="search-overlay__link" href="#">زونکن</a>
+          <a class="search-overlay__link" href="#">کاغذ A4</a>
+          <a class="search-overlay__link" href="#">قند</a>
+          <a class="search-overlay__link" href="#">کپی مکس</a>
+          <a class="search-overlay__link" href="#">مایع دستشویی</a>
+          <a class="search-overlay__link" href="#">چای</a>
+          <a class="search-overlay__link" href="#">خودکار</a>
+          <a class="search-overlay__link" href="#">کیسه زباله</a>
+          <a class="search-overlay__link" href="#">شکلات</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-overlay-mobile d-lg-none" id="menuOverlayMobile">
+      <div
+        class="d-flex align-items-center justify-content-between border-bottom p-2"
+      >
+        <div style="width: 40px; height: 40px"></div>
+        <a href="#">
+          <img
+            src="assets/images/logo.png"
+            width="110px
+                  "
+            alt=""
+          />
+        </a>
+        <button class="menu-overlay__close-mobile" id="closeMenu">
+          <i class="bi bi-x"></i>
+        </button>
+      </div>
+      <div class="menu-overlay__content-mobile">
+        <div class="row">
+          <div class="col-3 p-0 border-start">
+            <div class="d-flex menu-overlay__btns-wrapper flex-column">
+              <div
+                class="d-flex align-items-center border-bottom"
+                style="height: 120px"
+              >
+                <button
+                  class="p-2 menu-overlay__btn active"
+                  data-target="officeSuplies"
+                >
+                  <div class="d-flex flex-column gap-1 align-items-center">
+                    <img
+                      width="50px"
+                      height="50px"
+                      src="assets/images/1.png"
+                      alt=""
+                    />
+                    <span style="font-size: 12px">لوازم و ملزومات اداری</span>
+                  </div>
+                </button>
+              </div>
+              <div
+                class="d-flex align-items-center border-bottom"
+                style="height: 120px"
+              >
+                <button class="p-2 menu-overlay__btn" data-target="cleaning">
+                  <div class="d-flex flex-column gap-1 align-items-center">
+                    <img
+                      width="50px"
+                      height="50px"
+                      src="assets/images/2.png"
+                      alt=""
+                    />
+                    <span style="font-size: 12px">بهداشتی و نظافتی</span>
+                  </div>
+                </button>
+              </div>
+              <div
+                class="d-flex align-items-center border-bottom"
+                style="height: 120px"
+              >
+                <button class="p-2 menu-overlay__btn" data-target="snacks">
+                  <div class="d-flex flex-column gap-1 align-items-center">
+                    <img
+                      width="50px"
+                      height="50px"
+                      src="assets/images/3.png"
+                      alt=""
+                    />
+                    <span style="font-size: 12px">خوراکی های اداری</span>
+                  </div>
+                </button>
+              </div>
+              <div
+                class="d-flex align-items-center border-bottom"
+                style="height: 120px"
+              >
+                <button class="p-2 menu-overlay__btn" data-target="stationary">
+                  <div class="d-flex flex-column gap-1 align-items-center">
+                    <img
+                      width="50px"
+                      height="50px"
+                      src="assets/images/4.png"
+                      alt=""
+                    />
+                    <span style="font-size: 12px">لوازم تحریر</span>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-9">
+            <ul class="top-menu-mobile row list-unstyled pt-2">
+              <li class="col-12">
+                <ul
+                  class="menu-overlay__category p-0 list-unstyled d-flex flex-column gap-3"
+                  id="officeSuplies"
+                >
+                  <li>
+                    <a href="#">لوازم اداری</a>
+                    <ul class="p-0 list-unstyled">
+                      <li>
+                        <a href="#">خط کش و پرگار</a>
+                      </li>
+                      <li><a href="#">سطل، زیر پایی</a></li>
+                      <li><a href="#">ماشین حساب</a></li>
+                      <li><a href="#">کتابخانه اداری</a></li>
+                      <li><a href="#">آلبوم و جا کارتی</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">لوازم جانبی</a>
+                    <ul class="p-0 list-unstyled">
+                      <li>
+                        <a href="#">کارتریج، تونر</a>
+                      </li>
+                      <li><a href="#">سی دی، دی وی دی</a></li>
+                      <li>
+                        <a href="#">پد موس، زیر مانیتوری</a>
+                      </li>
+                      <li><a href="#">باطری</a></li>
+                      <li><a href="#">فلش مموری</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">میز و صندلی</a>
+                    <ul class="p-0 list-unstyled">
+                      <li>
+                        <a href="#">کارشناسی</a>
+                      </li>
+                      <li><a href="#">مدیریتی</a></li>
+                      <li><a href="#">میز پیشخوان</a></li>
+                      <li><a href="#">میز منشی</a></li>
+                      <li><a href="#">صندلی</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul
+                  class="menu-overlay__category p-0 list-unstyled d-flex flex-column gap-3 d-none"
+                  id="cleaning"
+                >
+                  <li>
+                    <a href="#">دستمال کاغذی</a>
+                    <ul class="p-0 list-unstyled">
+                      <li>
+                        <a href="#">دستمال رومیزی</a>
+                      </li>
+                      <li><a href="#">دستمال حوله ای</a></li>
+                      <li><a href="#">دستمال توالت</a></li>
+                      <li><a href="#">دستمال مخزنی</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">انواع شوینده</a>
+                    <ul class="p-0 list-unstyled">
+                      <li>
+                        <a href="#">مایع دستشویی</a>
+                      </li>
+                      <li><a href="#">مایع ظرفشویی</a></li>
+                      <li>
+                        <a href="#">شیشه شوی</a>
+                      </li>
+                      <li><a href="#">جرمگیر، سفید کننده</a></li>
+                      <li><a href="#">پودر ماشینی، پودر دستی</a></li>
+                      <li><a href="#">پاک کننده سطوح</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">ملزومات نظافت</a>
+                    <ul class="p-0 list-unstyled">
+                      <li>
+                        <a href="#">خوشبو کننده هوا</a>
+                      </li>
+                      <li><a href="#">دستمال تنطیف</a></li>
+                      <li><a href="#">تی، جارو، فرچه</a></li>
+                      <li><a href="#">قرص و پد توالت فرنگی</a></li>
+                      <li><a href="#">اسکاچ، ابر، سیم</a></li>
+                      <li><a href="#">لوله باز کن</a></li>
+                      <li><a href="#">ضدعفونی کننده</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">یکبار مصرف</a>
+                    <ul class="p-0 list-unstyled">
+                      <li>
+                        <a href="#">دستکش</a>
+                      </li>
+                      <li>
+                        <a href="#">کیسه زباله</a>
+                      </li>
+                      <li><a href="#">سفره</a></li>
+                      <li><a href="#">کیسه فریزر</a></li>
+                      <li><a href="#">ماسک</a></li>
+                      <li><a href="#">لیوان یکبار مصرف</a></li>
+                      <li><a href="#">ظروف یکبار مصرف</a></li>
+                      <li><a href="#">نایلکس دسته دار</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul
+                  class="menu-overlay__category p-0 list-unstyled d-flex flex-column gap-3 d-none"
+                  id="snacks"
+                >
+                  <li>
+                    <a href="#">نوشیدنی</a>
+                    <ul class="p-0 list-unstyled">
+                      <li>
+                        <a href="#">قهوه و نسکافه</a>
+                      </li>
+                      <li><a href="#">چای سیاه</a></li>
+                      <li><a href="#">آب معدنی</a></li>
+                      <li><a href="#">شربت</a></li>
+                      <li><a href="#">دمنوش</a></li>
+                      <li><a href="#">آب میوه</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">بیسکویت و تنقلات</a>
+                    <ul class="p-0 list-unstyled">
+                      <li><a href="#">بیسکویت ساده</a></li>
+                      <li>
+                        <a href="#">بیسکویت شکلاتی</a>
+                      </li>
+                      <li><a href="#">بیسکویت طعم دار</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">قند، شکر، نبات، روغن</a>
+                    <ul class="p-0 list-unstyled">
+                      <li>
+                        <a href="#">قند</a>
+                      </li>
+                      <li><a href="#">شکر</a></li>
+                      <li><a href="#">روغن</a></li>
+                      <li><a href="#">نبات</a></li>
+                      <li>
+                        <a href="#">برنج</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">طعم دهنده</a>
+                    <ul class="p-0 list-unstyled">
+                      <li>
+                        <a href="#">نمک</a>
+                      </li>
+                      <li><a href="#">سماق</a></li>
+                      <li><a href="#">فلفل</a></li>
+                      <li><a href="#">رب</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul
+                  class="menu-overlay__category p-0 list-unstyled d-flex flex-column gap-3 d-none"
+                  id="stationary"
+                >
+                  <li>
+                    <a href="#">نوشت افزار</a>
+                    <ul class="p-0 list-unstyled">
+                      <li>
+                        <a href="#">خودکار و روان نویس</a>
+                      </li>
+                      <li><a href="#">لاک غلط گیر</a></li>
+                      <li><a href="#">پاک کن، تراش</a></li>
+                      <li><a href="#">ماژیک</a></li>
+                      <li><a href="#">مداد</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">انواع کاغذ</a>
+                    <ul class="p-0 list-unstyled">
+                      <li>
+                        <a href="#">کاغذ (A4, A3, A5)</a>
+                      </li>
+                      <li><a href="#">پاکت کاغذی</a></li>
+                      <li>
+                        <a href="#">استیک نوت</a>
+                      </li>
+                      <li><a href="#">دفتر اداری</a></li>
+                      <li><a href="#">رول حرارتی</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">نظم دهنده</a>
+                    <ul class="p-0 list-unstyled">
+                      <li>
+                        <a href="#">زونکن اداری</a>
+                      </li>
+                      <li><a href="#">کارتابل</a></li>
+                      <li><a href="#">کازیه</a></li>
+                      <li><a href="#">پایه چسب و جاسوزنی</a></li>
+                      <li>
+                        <a href="#">جای قلم، یادداشت و زیر تقویمی</a>
+                      </li>
+                      <li><a href="#">تقویم، سررسید</a></li>
+                      <li><a href="#">پوشه، کاور، کلیربوک</a></li>
+                      <li><a href="#">کلاسور</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">ابزار تحریر</a>
+                    <ul class="p-0 list-unstyled">
+                      <li>
+                        <a href="#">طلق و شیرازه</a>
+                      </li>
+                      <li><a href="#">منگنه و سوزن</a></li>
+                      <li><a href="#">قیچی و کاتر</a></li>
+                      <li><a href="#">گیره، کلیپس، مگنت</a></li>
+                      <li>
+                        <a href="#">استامپ، جوهر، کاربن</a>
+                      </li>
+                      <li><a href="#">پانچ و سوزن کش</a></li>
+                      <li><a href="#">چسب</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
