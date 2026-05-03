@@ -920,6 +920,11 @@ main {
     padding-top: 24px !important;
   }
 
+  .product-cards {
+    background-color: #fff;
+    padding-top: 24px;
+  }
+
   .product-card-overlay {
     padding: 10px !important;
   }
