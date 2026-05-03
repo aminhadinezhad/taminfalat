@@ -18,72 +18,67 @@
     <div class="container-fluid p-0">
       <div class="row g-0">
         <div
-          class="sidebar-container col-lg-3 d-none d-lg-block position-sticky end-0 top-0 vh-100 pt-3 pb-3 ps-4 pe-4"
+          class="sidebar col-lg-3 d-none d-lg-block position-sticky end-0 top-0 vh-100 py-3 px-4"
         >
-          <div class="sidebar">
-            <div class="sidebar-logo">
-              <a href="#" class="">
-                <img src="assets/images/logo.png" class="img-fluid" alt="" />
-              </a>
-            </div>
-            <div class="sidebar-search">
-              <form
-                method="GET"
-                action="https://www.taminfalat.com/search"
-                role="form"
-                data-parsley-validate=""
-                novalidate=""
-              >
-                <input
-                  type="text"
-                  name="main_search"
-                  id="main_search1"
-                  autocomplete="off"
-                  placeholder="جستجو..."
-                  class="text-search"
-                  value=""
-                  data-parsley-id="4"
-                />
-              </form>
-              <i class="bi bi-search"></i>
-            </div>
-            <div class="sidebar-banner"></div>
-            <div class="sidebar-user d-flex justify-content-center">
-              <a href="#" title="پروفایل ">
-                <i
-                  class="bi bi-person-circle"
-                  title="ورود به داشبورد مشتری"
-                ></i>
-                <span>ورود / ثبت نام</span>
-              </a>
-            </div>
-            <div class="sidebar-cart">
-              <a href="#" title="سبد خرید">
-                <i class="bi bi-cart3"></i>
-                <span class="basket-count">0</span>
-              </a>
-            </div>
-            <div
-              class="sidebar-support d-flex justify-content-center align-items-center"
+          <div class="sidebar-logo text-center">
+            <a href="#" class="">
+              <img src="assets/images/logo.png" class="img-fluid" alt="" />
+            </a>
+          </div>
+          <div class="sidebar-search">
+            <form
+              method="GET"
+              action="https://www.taminfalat.com/search"
+              role="form"
+              data-parsley-validate=""
+              novalidate=""
             >
-              <a href="tel:02191001214" class="d-flex align-items-center">
-                <img
-                  src="assets/images/support.png"
-                  width="30"
-                  height="30"
-                  alt=""
-                />
-                <p class="m-0" style="font-size: 14px">پشتیبانی</p>
-              </a>
-            </div>
+              <input
+                type="text"
+                name="main_search"
+                id="main_search1"
+                autocomplete="off"
+                placeholder="جستجو..."
+                class="text-search"
+                value=""
+                data-parsley-id="4"
+              />
+              <i class="bi bi-search"></i>
+            </form>
+          </div>
+          <div class="sidebar-banner"></div>
+          <div class="sidebar-user d-flex justify-content-center">
+            <a href="#" title="پروفایل ">
+              <i class="bi bi-person-circle" title="ورود به داشبورد مشتری"></i>
+              <span>ورود / ثبت نام</span>
+            </a>
+          </div>
+          <div class="sidebar-cart">
+            <a href="#" title="سبد خرید">
+              <i class="bi bi-cart3"></i>
+              <span class="basket-count">0</span>
+            </a>
+          </div>
+          <div
+            class="sidebar-support d-flex justify-content-center align-items-center"
+          >
+            <a href="tel:02191001214" class="d-flex align-items-center">
+              <img
+                src="assets/images/support.png"
+                width="30"
+                height="30"
+                alt=""
+              />
+              <p class="m-0" style="font-size: 14px">پشتیبانی</p>
+            </a>
           </div>
         </div>
 
-        <div class="col-lg-9 position-relative">
-          <div class="position-relative d-none d-lg-block" style="height: 50px">
-            <button class="menu-btn menu-btn--desktop d-none d-lg-block">
-              <i class="bi bi-list"></i>
-            </button>
+        <div class="content col-lg-9 position-relative">
+          <div
+            class="position-relative d-none d-lg-block"
+            style="height: 50px; z-index: 30"
+          >
             <a class="" href="#" target="_blank" id="festival-banner">
               <div class="">
                 <div class="position-absolute" style="inset: 0">
@@ -98,13 +93,30 @@
                 </div>
               </div>
             </a>
+            <button class="menu-btn" title="دسته بندی محصولات">
+              <i class="bi bi-list"></i>
+            </button>
           </div>
           <main>
-            <div class="main-backdrop" id="mainBackdrop"></div>
-
-            <div class="menu-overlay d-none d-lg-block border" id="menuOverlay">
+            <div class="menu-overlay d-none d-lg-block" id="menuOverlay">
               <div class="menu-overlay__content">
-                <div class="container">
+                <div class="d-flex flex-column gap-5">
+                  <div
+                    class="d-flex align-items-center mx-auto"
+                    style="width: 100%"
+                  >
+                    <div
+                      class="flex-grow-1"
+                      style="border-top: 1px solid #414141"
+                    ></div>
+                    <span class="px-4" style="font-size: 18px; color: #414141"
+                      >دسته بندی محصولات</span
+                    >
+                    <div
+                      class="flex-grow-1"
+                      style="border-top: 1px solid #414141"
+                    ></div>
+                  </div>
                   <div class="row justify-content-between">
                     <div class="col-2">
                       <div class="row gy-4">
@@ -874,7 +886,7 @@
 
     <header
       class="d-lg-none position-fixed top-0 start-0 end-0"
-      style="z-index: 1030"
+      style="z-index: 30"
     >
       <div id="festival-banner-wrapper">
         <a href="#" target="_blank" id="festival-banner">

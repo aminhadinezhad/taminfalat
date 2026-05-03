@@ -1,35 +1,41 @@
-/* اگه پلن برای جای اسکرول عوض شد */
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-} */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html,
 body {
-  height: 100%;
-  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
-main {
-  height: calc(100vh - 50px);
-  width: 100%;
-  overflow-y: auto;
-}
-
-.sidebar-container {
+.sidebar {
   background-color: #e9e9e9;
+}
+
+.menu-btn {
+  position: absolute;
+  right: 10px;
+  bottom: -45px;
+  width: 45px;
+  height: 45px;
+  background-color: #9d9d9d;
+  color: #fff;
+  border: none;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: -4px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.menu-btn:hover {
+  background-color: #7a7a7a;
+  height: 50px;
+  bottom: -50px;
 }
 
 .sidebar-logo {
@@ -37,11 +43,14 @@ main {
 }
 
 .sidebar-search {
-  position: relative;
   margin-bottom: 24px;
 }
 
-.sidebar-search i {
+.sidebar-search form {
+  position: relative;
+}
+
+.sidebar-search form i {
   position: absolute;
   right: 16px;
   top: 50%;
@@ -156,7 +165,7 @@ main {
 .topbar {
   background-color: #fff;
   padding: 10px 16px;
-  z-index: 999;
+  z-index: 30;
 }
 
 .topbar-search > button {
@@ -179,69 +188,32 @@ main {
   position: relative;
 }
 
-.main-backdrop {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* background-color: rgba(0, 0, 0, 0.18); */
-  z-index: 1035;
-  opacity: 0;
-  visibility: hidden;
-  transition:
-    opacity 0.15s ease,
-    visibility 0.15s ease;
-}
-
-.main-backdrop.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.menu-btn {
-  position: absolute;
-  top: -5px;
-  right: 10px;
-  border: none;
-  background: none;
-  z-index: 9999;
-}
-
 .menu-btn-mobile {
   width: 100%;
 }
 
-.menu-btn i {
-  color: #212121;
-  font-size: 38px;
-}
-
 .menu-overlay {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  left: 20px;
-  min-height: 20vh;
+  right: 15px;
+  left: 15px;
   background-color: #e9e9e9;
-  border-radius: 12px;
-  z-index: 1040;
-  opacity: 0;
+  z-index: 20;
+  border-radius: 0 0 30px 100px;
   visibility: hidden;
-  transition:
-    opacity 0.15s ease,
-    visibility 0.15s ease;
+  transform: translateY(-100%);
+  transition: all 0.15s ease-in-out;
 }
 
 .menu-overlay.active {
-  opacity: 0.97;
+  opacity: 1;
   visibility: visible;
+  transform: translateX(0);
 }
 
 .menu-overlay__content {
   width: 100%;
   height: 100%;
-  padding: 40px 40px;
+  padding: 50px 30px;
   overflow-y: auto;
   position: relative;
 }
@@ -285,7 +257,7 @@ main {
   width: 100%;
   height: 100%;
   background-color: #fff;
-  z-index: 99999;
+  z-index: 50;
   opacity: 0;
   flex-direction: column;
   visibility: hidden;
@@ -388,7 +360,7 @@ main {
   width: 100%;
   height: 100%;
   background-color: #fff;
-  z-index: 9999;
+  z-index: 40;
   display: none;
   opacity: 0;
 }
@@ -472,7 +444,7 @@ main {
 .bottombar {
   background-color: #fff;
   padding: 0 16px;
-  z-index: 999999;
+  z-index: 100;
   touch-action: manipulation;
 }
 

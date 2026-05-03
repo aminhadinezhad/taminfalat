@@ -31,15 +31,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const menuOverlay = document.getElementById('menuOverlay');
   const mainBackdrop = document.getElementById('mainBackdrop');
 
-  if (menuBtn && menuOverlay && mainBackdrop) {
+  if (menuBtn && menuOverlay) {
     menuBtn.addEventListener('click', () => {
       menuOverlay.classList.toggle('active');
-      mainBackdrop.classList.toggle('active');
-    });
-
-    mainBackdrop.addEventListener('click', () => {
-      menuOverlay.classList.remove('active');
-      mainBackdrop.classList.remove('active');
     });
   }
 
