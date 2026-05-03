@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const menuBtn = document.querySelector('.menu-btn');
   const menuOverlay = document.getElementById('menuOverlay');
-  const mainBackdrop = document.getElementById('mainBackdrop');
 
   if (menuBtn && menuOverlay) {
     menuBtn.addEventListener('click', () => {
