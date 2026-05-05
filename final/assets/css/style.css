@@ -32,14 +32,6 @@ label,
   background-color: #e9e9e9;
 }
 
-.sidebar-logo {
-  margin-bottom: 24px;
-}
-
-.sidebar-search {
-  margin-bottom: 24px;
-}
-
 .sidebar-search form {
   position: relative;
 }
@@ -50,7 +42,7 @@ label,
   top: 50%;
   transform: translateY(-50%);
   color: #a8cf45;
-  font-size: 20px;
+  font-size: 24px;
   pointer-events: none;
 }
 
@@ -65,41 +57,27 @@ label,
 }
 
 .sidebar-banner {
-  margin-bottom: calc(
-    24px - 1.5px + 52.5px - (0.35 * 44px + ((52.5px - 35px) / 2))
-  );
   border: 2px solid #a8cf45;
   border-radius: 30px;
-  padding: 50px;
-}
-
-.sidebar-user {
-  position: relative;
-  margin-bottom: 24px;
+  padding: 60px;
 }
 
 .sidebar-user a {
   text-decoration: none;
   color: #a8cf45;
-  padding: 8px 16px;
+  padding: 2px 16px;
   border: 2px solid #a8cf45;
   border-radius: 30px;
   font-weight: 600;
-  text-align: center;
   background-color: #fff;
 }
 
 .sidebar-user i {
-  position: absolute;
-  bottom: 65%;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 35px;
+  font-size: 24px;
   z-index: 10;
 }
 
 .sidebar-cart {
-  margin-bottom: 24px;
   text-align: center;
 }
 
@@ -216,6 +194,7 @@ ul.top-menu > li > ul {
   padding: 16px 32px;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
   border: 1px solid #e9e9e9;
+  border-radius: 0 0 30px 30px;
   visibility: hidden;
   opacity: 0;
 }
@@ -243,25 +222,49 @@ ul.top-menu > li > ul > li > a {
   color: #7c9307;
   display: block;
   font-size: 17px;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 ul.top-menu > li > ul > li > ul {
-  list-style: circle;
-  margin-right: 16px;
+  list-style: none;
+  padding: 0;
 }
 
 ul.top-menu > li > ul > li > ul li a {
+  position: relative;
   text-decoration: none;
   color: #323232;
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   font-size: 13px;
   transition: all 0.2s;
 }
 
+ul.top-menu > li > ul > li > ul li a::before {
+  content: '';
+  position: absolute;
+  display: block;
+  background-color: #7c9307;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  opacity: 0;
+  transition: all 0.2s;
+  visibility: hidden;
+}
+
 ul.top-menu > li > ul > li > ul li a:hover {
-  padding-right: 5px;
+  padding-right: 10px;
+  color: #7c9307;
+  list-style: disc;
+}
+
+ul.top-menu > li > ul > li > ul li a:hover::before {
+  opacity: 1;
+  visibility: visible;
 }
 
 .menu-overlay-mobile {
@@ -696,7 +699,7 @@ ul.top-menu > li > ul > li > ul li a:hover {
 }
 
 .category-item span {
-  color: #505f00;
+  color: #647606;
   font-weight: 600;
   transition: 0.2s ease;
 }
