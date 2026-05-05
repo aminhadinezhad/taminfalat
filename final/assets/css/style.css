@@ -136,7 +136,7 @@ label,
 
 .topbar {
   background-color: #fff;
-  padding: 10px 16px;
+  padding: 8px 16px;
   z-index: 30;
 }
 
@@ -831,18 +831,23 @@ ul.top-menu > li > ul > li > ul li a:hover::before {
     width: 110px !important;
   }
 
+  .banners {
+    padding-top: 0 !important;
+  }
+
   .banner-slider-container {
-    width: 90% !important;
-    border-radius: 8px !important;
+    width: 100% !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .banner-arrow {
+    display: none !important;
   }
 
   .banner-slide img {
     object-fit: cover !important;
     background-color: #f0f0f0 !important;
-  }
-
-  .banner-slider {
-    aspect-ratio: 16 / 7 !important;
   }
 
   .banner-dots {
