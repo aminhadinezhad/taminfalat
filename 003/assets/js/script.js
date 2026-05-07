@@ -74,6 +74,13 @@ document.addEventListener('DOMContentLoaded', function () {
         if (cat.id === targetId) {
           cat.classList.remove('d-none');
           cat.classList.add('d-flex');
+
+          const leftSideContent = document.querySelector(
+            '.menu-overlay__content-mobile .col-9',
+          );
+          if (leftSideContent) {
+            leftSideContent.scrollTop = 0;
+          }
         } else {
           cat.classList.add('d-none');
           cat.classList.remove('d-flex');
