@@ -11,7 +11,7 @@ body {
 }
 
 .content {
-  height: calc(100vh - 70px);
+  height: calc(100vh - 85px);
   width: 100%;
   overflow-y: auto;
   padding-left: 0;
@@ -336,13 +336,9 @@ ul.top-menu > li > ul > li > ul li a:hover::before {
   margin: 0;
 }
 
-.menu-overlay__content-mobile .col-3 {
-  height: 100%;
-  overflow-y: auto;
-}
-
+.menu-overlay__content-mobile .col-3,
 .menu-overlay__content-mobile .col-9 {
-  height: calc(100% - 87px);
+  height: calc(100% - 85px);
   overflow-y: auto;
 }
 
@@ -547,7 +543,7 @@ ul.top-menu > li > ul > li > ul li a:hover::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 0 18px 0;
+  padding: 14px 0 18px 0;
   text-decoration: none;
   background: none;
   border: none;
@@ -555,7 +551,8 @@ ul.top-menu > li > ul > li > ul li a:hover::before {
 
 .bottom-nav-item span {
   color: rgb(159, 159, 169);
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 12px;
 }
 
 .bottom-nav-item.active svg {
@@ -638,6 +635,7 @@ input:-webkit-autofill:active {
 
 .input-wrapper label {
   position: absolute;
+  font-size: 14px;
   right: 15px;
   transform: translateY(-50%);
   padding: 0 5px;

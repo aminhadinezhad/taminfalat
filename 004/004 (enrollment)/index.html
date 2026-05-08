@@ -6,439 +6,1584 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="assets/twbs-icons-dd5f3c4/font/bootstrap-icons.css"
-    />
-    <title>client</title>
+    <title>تامین فلات | تامین ملزومات اداری</title>
   </head>
   <body>
-    <div class="container-fluid p-0">
-      <div class="row g-0">
-        <div
-          class="sidebar-container col-lg-3 d-none d-lg-block position-sticky end-0 top-0 vh-100 pt-3 pb-3 ps-4 pe-4"
-        >
-          <div class="sidebar">
-            <div class="sidebar-logo">
-              <a href="#" class="">
-                <img src="assets/images/logo.png" class="img-fluid" alt="" />
-              </a>
-            </div>
-            <div class="sidebar-search">
-              <form
-                method="GET"
-                action="https://www.taminfalat.com/search"
-                role="form"
-                data-parsley-validate=""
-                novalidate=""
-              >
-                <input
-                  type="text"
-                  name="main_search"
-                  id="main_search1"
-                  autocomplete="off"
-                  placeholder="جستجو..."
-                  class="text-search"
-                  value=""
-                  data-parsley-id="4"
-                />
-              </form>
-              <i class="bi bi-search"></i>
-            </div>
-            <div class="sidebar-banner"></div>
-            <div class="sidebar-user d-flex justify-content-center">
-              <a href="#" title="پروفایل ">
-                <i
-                  class="bi bi-person-circle"
-                  title="ورود به داشبورد مشتری"
-                ></i>
-                <span>ورود / ثبت نام</span>
-              </a>
-            </div>
-            <div class="sidebar-cart">
-              <a href="#" title="سبد خرید">
-                <i class="bi bi-cart3"></i>
-                <span class="basket-count">0</span>
-              </a>
-            </div>
-            <div
-              class="sidebar-support d-flex justify-content-center align-items-center"
+    <div class="row g-0">
+      <div
+        class="sidebar col-lg-3 d-none d-lg-flex flex-column justify-content-between position-sticky end-0 top-0 vh-100 pt-4 px-4"
+        style="padding-bottom: 64px"
+      >
+        <div class="sidebar-logo text-center">
+          <a href="https://www.taminfalat.com/" class="">
+            <img src="assets/images/logo.png" class="img-fluid" alt="" />
+          </a>
+        </div>
+        <div class="sidebar-search">
+          <form
+            method="GET"
+            action="https://www.taminfalat.com/search"
+            role="form"
+            data-parsley-validate=""
+            novalidate=""
+          >
+            <input
+              type="text"
+              name="main_search"
+              id="main_search1"
+              autocomplete="off"
+              placeholder="جستجو..."
+              class="text-search"
+              value=""
+              data-parsley-id="4"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              color="currentColor"
+              fill="none"
+              stroke="#a8cf45"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
             >
-              <a href="tel:02191001214" class="d-flex align-items-center">
-                <img
-                  src="assets/images/support.png"
-                  width="30"
-                  height="30"
-                  alt=""
-                />
-                <p class="m-0" style="font-size: 14px">پشتیبانی</p>
-              </a>
-            </div>
+              <path d="M17 17L21 21" />
+              <path
+                d="M19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C15.4183 19 19 15.4183 19 11Z"
+              />
+            </svg>
+          </form>
+        </div>
+        <div class="sidebar-banner"></div>
+        <div class="sidebar-user d-flex justify-content-center">
+          <a
+            class="d-flex justify-content-center align-items-center gap-1"
+            href="https://www.taminfalat.com/entry"
+            title="پروفایل "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              color="currentColor"
+              fill="none"
+              stroke="#a8cf45"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M17 8.5C17 5.73858 14.7614 3.5 12 3.5C9.23858 3.5 7 5.73858 7 8.5C7 11.2614 9.23858 13.5 12 13.5C14.7614 13.5 17 11.2614 17 8.5Z"
+              />
+              <path
+                d="M19 20.5C19 16.634 15.866 13.5 12 13.5C8.13401 13.5 5 16.634 5 20.5"
+              />
+            </svg>
+            <span>ورود / ثبت نام</span>
+          </a>
+        </div>
+        <div class="sidebar-cart">
+          <a href="https://www.taminfalat.com/cart" title="سبد خرید">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="48"
+              height="48"
+              color="currentColor"
+              fill="none"
+              stroke="#7c9307"
+              stroke-width="1.5"
+            >
+              <path
+                d="M8 16L16.7201 15.2733C19.4486 15.046 20.0611 14.45 20.3635 11.7289L21 6"
+                stroke-linecap="round"
+              />
+              <path d="M6 6H22" stroke-linecap="round" />
+              <circle cx="6" cy="20" r="2" />
+              <circle cx="17" cy="20" r="2" />
+              <path d="M8 20L15 20" stroke-linecap="round" />
+              <path
+                d="M2 2H2.966C3.91068 2 4.73414 2.62459 4.96326 3.51493L7.93852 15.0765C8.08887 15.6608 7.9602 16.2797 7.58824 16.7616L6.63213 18"
+                stroke-linecap="round"
+              />
+            </svg>
+            <span class="basket-count">0</span>
+          </a>
+        </div>
+        <div
+          class="sidebar-support d-flex justify-content-center align-items-center"
+        >
+          <a href="tel:02191001214" class="d-flex align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              color="current"
+              fill="none"
+              stroke="#fff"
+              stroke-width="1.5"
+            >
+              <path
+                d="M17 10.8045C17 10.4588 17 10.286 17.052 10.132C17.2032 9.68444 17.6018 9.51076 18.0011 9.32888C18.45 9.12442 18.6744 9.02219 18.8968 9.0042C19.1493 8.98378 19.4022 9.03818 19.618 9.15929C19.9041 9.31984 20.1036 9.62493 20.3079 9.87302C21.2513 11.0188 21.7229 11.5918 21.8955 12.2236C22.0348 12.7334 22.0348 13.2666 21.8955 13.7764C21.6438 14.6979 20.8485 15.4704 20.2598 16.1854C19.9587 16.5511 19.8081 16.734 19.618 16.8407C19.4022 16.9618 19.1493 17.0162 18.8968 16.9958C18.6744 16.9778 18.45 16.8756 18.0011 16.6711C17.6018 16.4892 17.2032 16.3156 17.052 15.868C17 15.714 17 15.5412 17 15.1955V10.8045Z"
+              />
+              <path
+                d="M7 10.8046C7 10.3694 6.98778 9.97821 6.63591 9.6722C6.50793 9.5609 6.33825 9.48361 5.99891 9.32905C5.55001 9.12458 5.32556 9.02235 5.10316 9.00436C4.43591 8.9504 4.07692 9.40581 3.69213 9.87318C2.74875 11.019 2.27706 11.5919 2.10446 12.2237C1.96518 12.7336 1.96518 13.2668 2.10446 13.7766C2.3562 14.6981 3.15152 15.4705 3.74021 16.1856C4.11129 16.6363 4.46577 17.0475 5.10316 16.996C5.32556 16.978 5.55001 16.8757 5.99891 16.6713C6.33825 16.5167 6.50793 16.4394 6.63591 16.3281C6.98778 16.0221 7 15.631 7 15.1957V10.8046Z"
+              />
+              <path
+                d="M5 9C5 5.68629 8.13401 3 12 3C15.866 3 19 5.68629 19 9"
+                stroke-linecap="square"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M19 17V17.8C19 19.5673 17.2091 21 15 21H13"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p class="m-0" style="font-size: 14px">پشتیبانی</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-9">
+        <div
+          class="d-flex flex-column d-none d-lg-block border-bottom shadow-sm"
+          style="z-index: 30"
+        >
+          <div style="height: 40px">
+            <a
+              class="d-block w-100 h-100"
+              href="#"
+              target="_blank"
+              id="festival-banner"
+            >
+              <img
+                loading="eager"
+                src="assets/images/ad-banner.gif"
+                alt="festival-banner"
+                class="w-100 h-100 object-fit-cover"
+              />
+            </a>
           </div>
+          <nav>
+            <ul class="top-menu">
+              <li>
+                <a
+                  class="d-flex align-items-center"
+                  style="gap: 6px"
+                  href="https://www.taminfalat.com/categorylist/لوازم-و-ملزومات-اداری"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    color="currentColor"
+                    fill="none"
+                    stroke="#141B34"
+                    stroke-width="1.5"
+                  >
+                    <path d="M3 10H21" stroke-linejoin="round" />
+                    <path
+                      d="M15 6L17 6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M21 13V11C21 6.75736 21 4.63604 19.682 3.31802C18.364 2 16.2426 2 12 2C7.75736 2 5.63604 2 4.31802 3.31802C3 4.63604 3 6.75736 3 11V13C3 17.2426 3 19.364 4.31802 20.682C5.63604 22 7.75736 22 12 22C16.2426 22 18.364 22 19.682 20.682C21 19.364 21 17.2426 21 13Z"
+                    />
+                    <path
+                      d="M7 14H7.52632M11.7368 14H12.2632M16.4737 14H17"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7 18H7.52632M11.7368 18H12.2632M16.4737 18H17"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span>لوازم و ملزومات اداری</span>
+                </a>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.taminfalat.com/categorylist/لوازم-اداری-1"
+                      >لوازم اداری</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/خط-کش-پرگار"
+                        >
+                          خط کش و پرگار</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/سطل-زیرپایی"
+                        >
+                          سطل، زیرپایی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/ماشین-حساب"
+                        >
+                          ماشین حساب</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/کتابخانه-اداری"
+                        >
+                          کتابخانه اداری</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/آلبوم-و-جا-کارتی"
+                        >
+                          آلبوم و جا کارتی</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.taminfalat.com/categorylist/لوازم-جانبی-کامپیوتر"
+                      >لوازم جانبی</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/کارتریج-تونر"
+                        >
+                          کارتریج، تونر</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/سی-دی-دی-وی-دی"
+                        >
+                          سی دی، دی وی دی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/پد-موس-زیر-مانیتوری"
+                        >
+                          پد موس، زیر مانیتوری</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.taminfalat.com/categorylist/باطری">
+                          باطری</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/فلش-مموری"
+                        >
+                          فلش مموری</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="https://www.taminfalat.com/categorylist/میز-1"
+                      >میز و صندلی</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/کارشناسی"
+                        >
+                          کارشناسی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/مدیریتی"
+                        >
+                          مدیریتی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/میز-پیشخوان"
+                        >
+                          میز پیشخوان</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/میز-منشی"
+                        >
+                          میز منشی</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.taminfalat.com/categorylist/صندلی">
+                          صندلی</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a
+                  class="d-flex align-items-center"
+                  style="gap: 6px"
+                  href="https://www.taminfalat.com/categorylist/بهداشتی-و-نظافتی"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    color="currentColor"
+                    fill="none"
+                    stroke="#141B34"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  >
+                    <path
+                      d="M4.5 13C4.5 10.2386 6.73858 8 9.5 8C12.2614 8 14.5 10.2386 14.5 13V18C14.5 19.8856 14.5 20.8284 13.9142 21.4142C13.3284 22 12.3856 22 10.5 22H8.5C6.61438 22 5.67157 22 5.08579 21.4142C4.5 20.8284 4.5 19.8856 4.5 18V13Z"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M14.5 13.1122C10.8607 9.83944 8.89093 14.9405 4.5 13.8418"
+                    />
+                    <path
+                      d="M7.5 8V7C7.5 6.05719 7.5 5.58579 7.79289 5.29289C8.08579 5 8.55719 5 9.5 5C10.4428 5 10.9142 5 11.2071 5.29289C11.5 5.58579 11.5 6.05719 11.5 7V8"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9.5 5V2M9.5 2H7.5M9.5 2H12.9229C13.9117 2 14.7493 2.39009 15.5 3"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M19.4414 8.97336C19.671 9.84608 19.2059 10.7313 18.4026 10.9505C17.5994 11.1697 16.7621 10.64 16.5325 9.76726C16.303 8.89454 17.3634 7 17.3634 7C17.3634 7 19.2118 8.10063 19.4414 8.97336Z"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span>بهداشتی و نظافتی</span>
+                </a>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.taminfalat.com/categorylist/دستمال-و-حوله"
+                      >دستمال کاغذی</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/دستمال-رومیزی"
+                        >
+                          دستمال رومیزی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/دستمال-حوله-ای-1"
+                        >
+                          دستمال حوله ای</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/دستمال-توالت"
+                        >
+                          دستمال توالت</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/دستمال-مخزنی"
+                        >
+                          دستمال مخزنی</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.taminfalat.com/categorylist/شوینده-دست-1"
+                      >انواع شوینده</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/مایع-دستشویی-1"
+                        >
+                          مایع دستشویی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/مایع-ظرفشویی"
+                        >
+                          مایع ظرفشویی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/شیشه-شور-چند-منظوره-1"
+                        >
+                          شیشه شوی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/جرمگیر-سفید-کننده"
+                        >
+                          جرمگیر، سفید کننده</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/پودر-ماشینی-پودر-دستی-1"
+                        >
+                          پودر ماشینی، پودر دستی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/پاک-کننده-سطوح"
+                        >
+                          پاک کننده سطوح</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.taminfalat.com/categorylist/ملزومات-نظافت"
+                      >ملزومات نظافت</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/خوشبو-کننده-هوا"
+                        >
+                          خوشبو کننده هوا</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/دستمال-نظافت"
+                        >
+                          دستمال تنظیف</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/تی-جارو-فرچه-1"
+                        >
+                          تی، جارو، فرچه</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/پد-توالت-فرنگی-و-قرص"
+                        >
+                          قرص و پد توالت فرنگی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/اسکاچ-ابر-سیم"
+                        >
+                          اسکاچ، ابر، سیم</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/لوله-باز-کن-1"
+                        >
+                          لوله باز کن</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/ضدعفونی-کننده"
+                        >
+                          ضدعفونی کننده</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.taminfalat.com/categorylist/ظروف-یکبار-مصرف"
+                      >یکبار مصرف</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/دستکش-و-ماسک"
+                        >
+                          دستکش</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/کیسه-زباله-1"
+                        >
+                          کیسه زباله</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/سفره-لیوان"
+                        >
+                          سفره</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/کیسه-فریزر-1"
+                        >
+                          کیسه فریزر</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.taminfalat.com/categorylist/ماسک">
+                          ماسک</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/لیوان-یکبار-مصرف"
+                        >
+                          لیوان یکبار مصرف</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/ظروف-یکبار-مصرف-2"
+                        >
+                          ظروف یکبار مصرف</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/نایلکس-دسته-دار"
+                        >
+                          نایلکس دسته دار</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a
+                  class="d-flex align-items-center"
+                  style="gap: 6px"
+                  href="https://www.taminfalat.com/categorylist/خوراکی-های-اداری"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    color="currentColor"
+                    fill="none"
+                    stroke="#141B34"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      d="M16.2006 14.6886L9.31135 7.79939C8.84911 7.33715 8.61799 7.10603 8.33269 7.03327C8.22784 7.00653 8.11954 6.99581 8.01149 7.00147C7.71745 7.01686 7.44549 7.19817 6.90157 7.56078L6.76211 7.65376C5.65941 8.38889 5.10805 8.75646 5.02086 9.19212C4.97402 9.42615 5.00656 9.66912 5.11333 9.88258C5.31208 10.28 5.94072 10.4895 7.19799 10.9086C7.60207 11.0433 7.80411 11.1106 7.95873 11.2387C8.04473 11.3099 8.11907 11.3942 8.17908 11.4883C8.287 11.6576 8.32876 11.8665 8.4123 12.2841L8.68235 13.6344C8.81834 14.3143 8.88633 14.6543 9.11602 14.884C9.34571 15.1137 9.68566 15.1817 10.3656 15.3176L11.7159 15.5877C12.1335 15.6712 12.3424 15.713 12.5117 15.8209C12.6058 15.8809 12.6901 15.9553 12.7613 16.0413C12.8894 16.1959 12.9567 16.3979 13.0914 16.802C13.5105 18.0593 13.72 18.6879 14.1174 18.8867C14.3309 18.9934 14.5738 19.026 14.8079 18.9791C15.2435 18.8919 15.6111 18.3406 16.3462 17.2379L16.4392 17.0984C16.8018 16.5545 16.9831 16.2825 16.9985 15.9885C17.0042 15.8805 16.9935 15.7722 16.9667 15.6673C16.894 15.382 16.6628 15.1509 16.2006 14.6886Z"
+                    />
+                    <path
+                      d="M13.5 18L11.7256 19.8557C10.2961 21.2852 9.5813 22 8.69309 22C7.80489 22 7.09012 21.2852 5.66057 19.8557L4.14431 18.3394C2.71477 16.9099 2 16.1951 2 15.3069C2 14.4187 2.71477 13.7039 4.14431 12.2744L6 10.5"
+                    />
+                    <path
+                      d="M9 7.70827L12.6459 4.06241C14.0208 2.68747 14.7083 2 15.5626 2C16.4168 2 17.1043 2.68747 18.4792 4.06241L19.9376 5.52076C21.3125 6.8957 22 7.58317 22 8.43745C22 9.29173 21.3125 9.9792 19.9376 11.3541L16.2917 15"
+                    />
+                    <path
+                      d="M19.6003 4.39996L12.4003 11.6M12 4L20 12"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span>خوراکی های اداری</span>
+                </a>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.taminfalat.com/categorylist/چای-و-دمنوش-1"
+                      >نوشیدنی</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/قهوه-و-نسکافه-1"
+                        >
+                          قهوه و نسکافه</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/چای-سیاه-1"
+                        >
+                          چای سیاه</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/آب-معدنی-1"
+                        >
+                          آب معدنی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/شربت-1"
+                        >
+                          شربت</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/دمنوش-1"
+                        >
+                          دمنوش</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/آبمیوه"
+                        >
+                          آبمیوه</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.taminfalat.com/categorylist/بیسکویت-و-تنقلات"
+                      >بیسکویت و تنقلات</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/بیسکویت-ساده"
+                        >
+                          بیسکویت ساده</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/بیسکویت-شکلاتی-1"
+                        >
+                          بیسکویت شکلاتی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/بیسکویت-طعم-دار"
+                        >
+                          بیسکویت طعم دار</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.taminfalat.com/categorylist/شکلات-و-آبنبات"
+                      >شکلات و آبنبات</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/شکلات-و-آبنبات-تلخ"
+                        >
+                          شکلات و آبنبات تلخ</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/شکلات-و-آبنبات-شیرین"
+                        >
+                          شکلات و آبنبات شیرین</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/شکلات-و-آبنبات-شیری"
+                        >
+                          شکلات و آبنبات شیری</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.taminfalat.com/categorylist/قند-شکر-نبات-روغن"
+                      >قند، شکر، نبات، روغن</a
+                    >
+                    <ul>
+                      <li>
+                        <a href="https://www.taminfalat.com/categorylist/قند">
+                          قند</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.taminfalat.com/categorylist/شکر">
+                          شکر</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.taminfalat.com/categorylist/روغن">
+                          روغن</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/نبات-1"
+                        >
+                          نبات</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.taminfalat.com/categorylist/برنج">
+                          برنج</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.taminfalat.com/categorylist/طعم-دهنده-1"
+                      >طعم دهنده</a
+                    >
+                    <ul>
+                      <li>
+                        <a href="https://www.taminfalat.com/categorylist/نمک-1">
+                          نمک</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.taminfalat.com/categorylist/فلفل">
+                          فلفل</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/سماق-1"
+                        >
+                          سماق</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.taminfalat.com/categorylist/رب-1">
+                          رب</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a
+                  class="d-flex align-items-center"
+                  style="gap: 6px"
+                  href="https://www.taminfalat.com/categorylist/لوازم-تحریر-1"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    color="currentColor"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      d="M21 17.4C21 19.0971 21 19.9456 20.3491 20.4728C19.6983 21 18.6507 21 16.5556 21H15.4444C13.3493 21 12.3017 21 11.6509 20.4728C11 19.9456 11 19.0971 11 17.4L11 6.6C11 4.90294 11 4.05442 11.6509 3.52721C12.3017 3 13.3493 3 15.4444 3L16.5556 3C18.6507 3 19.6983 3 20.3491 3.52721C21 4.05442 21 4.90294 21 6.6L21 17.4Z"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M3 5.04096C3 4.07884 3 3.59778 3.29289 3.29889C3.58579 3 4.05719 3 5 3C5.94281 3 6.41421 3 6.70711 3.29889C7 3.59778 7 4.07884 7 5.04096L7 15.8877C7 16.7952 7 17.2489 6.92429 17.6878C6.855 18.0895 6.73877 18.4813 6.57807 18.8547C6.40249 19.2628 6.15585 19.6403 5.66258 20.3954C5.44279 20.7318 5.33289 20.9 5.19487 20.9597C5.0703 21.0134 4.9297 21.0134 4.80513 20.9597C4.66711 20.9 4.55721 20.7318 4.33742 20.3954C3.84415 19.6403 3.59751 19.2628 3.42193 18.8548C3.26123 18.4813 3.14499 18.0895 3.07571 17.6878C3 17.2489 3 16.7952 3 15.8877L3 5.04096Z"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11.5 16.5L13.5 16.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11.5 12L13.5 12"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11.5 7.5L13.5 7.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7 7C7 7.55228 6.10457 8 5 8C3.89543 8 3 7.55228 3 7"
+                    />
+                  </svg>
+                  <span>لوازم تحریر</span>
+                </a>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.taminfalat.com/categorylist/نوشت-افزار-1"
+                      >نوشت افزار</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/خودکار-مداد-روان-نویس-ماژیک"
+                        >
+                          خودکار و روان نویس</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/لاک-غلط-گیر-و-گچ"
+                        >
+                          لاک غلط گیر</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/پاک-کن-تراش"
+                        >
+                          پاک کن، تراش</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.taminfalat.com/categorylist/ماژیک">
+                          ماژیک</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.taminfalat.com/categorylist/مداد">
+                          مداد</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="https://www.taminfalat.com/categorylist/انواع-کاغذ"
+                      >انواع کاغذ</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/کاغذ-اداری-1"
+                        >
+                          کاغذ (A4,A3,A5)</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/پاکت-کاغذی-1"
+                        >
+                          پاکت کاغذی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/دفتر-دفتر-یادداشت-استیک-نوت"
+                        >
+                          استیک نوت</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/دفتر-اندیکاتور-معین-حضور-و-غیاب-ارسال-و-مراسلات-روزنامه-و-1"
+                        >
+                          دفتر اداری</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/رول-حرارتی"
+                        >
+                          رول حرارتی</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.taminfalat.com/categorylist/وسایل-رومیزی"
+                      >نظم دهنده</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/زونکن-کلاسور-پوشه-کاور-کلیربوک-1"
+                        >
+                          زونکن اداری</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/کارتابل-1"
+                        >
+                          کارتابل</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/کازیه-1"
+                        >
+                          کازیه</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/پایه-چسب-جاسوزنی"
+                        >
+                          پایه چسب و جاسوزنی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/جای-قلم-جا-یادداشت-زیر-تقویمی-تخته-شاسی-ذره-بین"
+                        >
+                          جای قلم، یادداشت و زیر تقویمی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/تقویم-سررسید-1"
+                        >
+                          تقویم، سررسید</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/پوشه-کاور-کلیربوک"
+                        >
+                          پوشه، کاور، کلیربوک</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/کلاسور"
+                        >
+                          کلاسور</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.taminfalat.com/categorylist/ابزار-تحریر"
+                      >ابزار تحریر</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/طلق-شیرازه-دیوایدر"
+                        >
+                          طلق و شیرازه</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/ماشین-دوخت-پانچ-سوزن-کش-1"
+                        >
+                          منگنه و سوزن</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/قیچی-کاتر-تیغ-کاتر"
+                        >
+                          قیچی و کاتر</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/گیره-کلیپس-سوزن-مگنت"
+                        >
+                          گیره، کلیپس، مگنت</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/چسب-استامپ-جوهر-کاربن-کش-ابر"
+                        >
+                          استامپ، جوهر، کاربن</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/پانچ-و-سوزن-کش"
+                        >
+                          پانچ و سوزن کش</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.taminfalat.com/categorylist/چسب">
+                          چسب</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a
+                  class="d-flex align-items-center"
+                  style="gap: 6px"
+                  href="https://www.taminfalat.com/categorylist/هدایای-تبلیغاتی"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    color="currentColor"
+                    fill="none"
+                    stroke="#141B34"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M4 11V15C4 18.2998 4 19.9497 5.02513 20.9749C6.05025 22 7.70017 22 11 22H13C16.2998 22 17.9497 22 18.9749 20.9749C20 19.9497 20 18.2998 20 15V11"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M3 9C3 8.25231 3 7.87846 3.20096 7.6C3.33261 7.41758 3.52197 7.26609 3.75 7.16077C4.09808 7 4.56538 7 5.5 7H18.5C19.4346 7 19.9019 7 20.25 7.16077C20.478 7.26609 20.6674 7.41758 20.799 7.6C21 7.87846 21 8.25231 21 9C21 9.74769 21 10.1215 20.799 10.4C20.6674 10.5824 20.478 10.7339 20.25 10.8392C19.9019 11 19.4346 11 18.5 11H5.5C4.56538 11 4.09808 11 3.75 10.8392C3.52197 10.7339 3.33261 10.5824 3.20096 10.4C3 10.1215 3 9.74769 3 9Z"
+                    />
+                    <path
+                      d="M6 3.78571C6 2.79949 6.79949 2 7.78571 2H8.14286C10.2731 2 12 3.7269 12 5.85714V7H9.21429C7.43908 7 6 5.56091 6 3.78571Z"
+                    />
+                    <path
+                      d="M18 3.78571C18 2.79949 17.2005 2 16.2143 2H15.8571C13.7269 2 12 3.7269 12 5.85714V7H14.7857C16.5609 7 18 5.56091 18 3.78571Z"
+                    />
+                    <path d="M12 11L12 22" stroke-linecap="round" />
+                  </svg>
+                  <span>هدایای تبلیغاتی</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
 
-        <div class="col-lg-9">
-          <header class="sticky-top d-none d-lg-block">
-            <a class="" href="#" target="_blank" id="festival-banner">
-              <div class="" style="padding-top: 3.125%; min-height: 40px">
-                <div class="position-absolute" style="inset: 0">
-                  <img
-                    loading="eager"
-                    src="assets/images/ad-banner.gif"
-                    width="1920"
-                    height="40"
-                    alt="festival-banner"
-                    class="w-100 h-100 object-fit-cover"
-                  />
-                </div>
+        <header
+          class="d-lg-none position-sticky top-0 start-0 end-0"
+          style="z-index: 30"
+        >
+          <div id="festival-banner-wrapper">
+            <a href="#" target="_blank" id="festival-banner">
+              <div>
+                <img
+                  loading="eager"
+                  src="assets/images/ad-banner.gif"
+                  width="1920"
+                  height="40"
+                  alt="festival-banner"
+                  class="w-100 d-block object-fit-cover"
+                />
               </div>
             </a>
-          </header>
+          </div>
+          <div class="topbar border-bottom">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="topbar-logo">
+                <a href="https://www.taminfalat.com/">
+                  <img src="assets/images/logo.png" alt="logo" />
+                </a>
+              </div>
+              <div class="topbar-search">
+                <button id="searchBtn">
+                  <span id="searchText"></span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    color="currentColor"
+                    fill="none"
+                    stroke="#323232"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M17 17L21 21" />
+                    <path
+                      d="M19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C15.4183 19 19 15.4183 19 11Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="content">
           <main>
-            <div class="d-flex flex-column align-items-center gap-4">
-              <div class="d-flex justify-content-center">
-                <div class="buttons-wrapper d-flex rounded-pill p-1">
-                  <a
-                    href="../004 (register)/index.html"
-                    class="fw-semibold rounded-pill"
-                    id="natural"
-                    style="
-                      border: none;
-                      background-color: inherit;
-                      padding: 6px 12px;
-                      color: #7c9307;
-                      text-decoration: none;
-                    "
-                  >
-                    ثبت نام حقیقی
-                  </a>
-                  <a
-                    href=""
-                    class="fw-semibold rounded-pill"
-                    id="legal"
-                    style="
-                      background: #7c9307;
-                      color: #f6fae8;
-                      border: none;
-                      padding: 6px 12px;
-                      text-decoration: none;
-                    "
-                  >
-                    ثبت نام حقوقی
-                  </a>
-                </div>
-              </div>
-              <div class="">
-                <img src="assets/images/users.png" width="120" alt="" />
-              </div>
-              <div class="informations-wrapper">
-                <div class="info d-flex justify-content-center" id="natural">
-                  <div class="" style="width: 640px">
-                    <form method="POST" action="/api/register">
-                      <div
-                        class="mb-3"
-                        style="display: flex; flex-wrap: wrap; gap: 20px"
-                      >
-                        <div class="input-wrapper" style="flex: 1">
-                          <input
-                            type="text"
-                            name="company_name"
-                            placeholder=" "
-                            style="width: 100%"
-                            required
-                            oninvalid="
-                              this.setCustomValidity(
-                                'لطفاً نام کامل شرکت را وارد کنید',
-                              )
-                            "
-                            oninput="this.setCustomValidity('')"
-                          />
-                          <label
-                            >نام کامل شرکت<span class="required">*</span></label
-                          >
-                        </div>
-                        <div class="input-wrapper" style="flex: 1">
-                          <input
-                            type="text"
-                            name="company_national_code"
-                            placeholder=" "
-                            style="width: 100%"
-                            required
-                            oninvalid="
-                              this.setCustomValidity(
-                                'لطفاً شناسه ملی شرکت را وارد کنید',
-                              )
-                            "
-                            oninput="this.setCustomValidity('')"
-                          />
-                          <label
-                            >شناسه ملی شرکت<span class="required"
-                              >*</span
-                            ></label
-                          >
-                        </div>
-                      </div>
-
-                      <div
-                        class="mb-3"
-                        style="display: flex; flex-wrap: wrap; gap: 20px"
-                      >
-                        <div class="input-wrapper" style="flex: 1">
-                          <input
-                            type="text"
-                            name="company_fiscal_code"
-                            placeholder=" "
-                            style="width: 100%"
-                            required
-                            oninvalid="
-                              this.setCustomValidity(
-                                'لطفاً کد اقتصادی شرکت را وارد کنید',
-                              )
-                            "
-                            oninput="this.setCustomValidity('')"
-                          />
-                          <label
-                            >کد اقتصادی شرکت<span class="required"
-                              >*</span
-                            ></label
-                          >
-                        </div>
-                        <div class="input-wrapper" style="flex: 1">
-                          <input
-                            type="tel"
-                            name="mobile"
-                            placeholder=" "
-                            style="width: 100%"
-                            required
-                            oninvalid="
-                              this.setCustomValidity(
-                                'لطفاً شماره موبایل را وارد کنید',
-                              )
-                            "
-                            oninput="this.setCustomValidity('')"
-                          />
-                          <label
-                            >شماره موبایل<span class="required">*</span></label
-                          >
-                        </div>
-                      </div>
-
-                      <div
-                        class="mb-3"
-                        style="display: flex; flex-wrap: wrap; gap: 20px"
-                      >
-                        <div class="input-wrapper" style="flex: 1">
-                          <input
-                            type="tel"
-                            name="phone"
-                            placeholder=" "
-                            style="width: 100%"
-                            required
-                            oninvalid="
-                              this.setCustomValidity(
-                                'لطفاً شماره ثابت را وارد کنید',
-                              )
-                            "
-                            oninput="this.setCustomValidity('')"
-                          />
-                          <label
-                            >شماره ثابت<span class="required">*</span></label
-                          >
-                        </div>
-                        <div class="input-wrapper" style="flex: 1">
-                          <input
-                            type="text"
-                            name="postal_code"
-                            placeholder=" "
-                            style="width: 100%"
-                            required
-                            oninvalid="
-                              this.setCustomValidity(
-                                'لطفاً کد پستی را وارد کنید',
-                              )
-                            "
-                            oninput="this.setCustomValidity('')"
-                          />
-                          <label>کد پستی<span class="required">*</span></label>
-                        </div>
-                      </div>
-
-                      <div
-                        class="mb-3"
-                        style="display: flex; flex-wrap: wrap; gap: 20px"
-                      >
-                        <div class="input-wrapper" style="flex: 1">
-                          <input
-                            type="text"
-                            name="address"
-                            placeholder=" "
-                            style="width: 100%"
-                            required
-                            oninvalid="
-                              this.setCustomValidity('لطفاً نشانی را وارد کنید')
-                            "
-                            oninput="this.setCustomValidity('')"
-                          />
-                          <label>نشانی<span class="required">*</span></label>
-                        </div>
-                      </div>
-
-                      <div
-                        class="mb-3"
-                        style="display: flex; flex-wrap: wrap; gap: 20px"
-                      >
-                        <div class="input-wrapper" style="flex: 1">
-                          <input
-                            type="password"
-                            name="password"
-                            placeholder=" "
-                            style="width: 100%"
-                            required
-                            oninvalid="
-                              this.setCustomValidity(
-                                'لطفاً رمز عبور را وارد کنید',
-                              )
-                            "
-                            oninput="this.setCustomValidity('')"
-                          />
-                          <label>رمز عبور<span class="required">*</span></label>
-                        </div>
-                        <div class="input-wrapper" style="flex: 1">
-                          <input
-                            type="password"
-                            name="password_confirmation"
-                            placeholder=" "
-                            style="width: 100%"
-                            required
-                            oninvalid="
-                              this.setCustomValidity(
-                                'لطفاً تکرار رمز عبور را وارد کنید',
-                              )
-                            "
-                            oninput="this.setCustomValidity('')"
-                          />
-                          <label
-                            >تکرار رمز عبور<span class="required"
-                              >*</span
-                            ></label
-                          >
-                        </div>
-                      </div>
-
-                      <div
-                        class="mt-4"
-                        style="display: flex; justify-content: center"
-                      >
-                        <input
-                          type="submit"
-                          value="ثبت نام"
-                          style="
-                            padding: 5px 40px;
-                            font-weight: bold;
-                            font-size: 20px;
-                            border: 2px solid #a8cf45;
-                            color: #7c9307;
-                            outline: none;
-                            border-radius: 14px;
-                            background: none;
-                            cursor: pointer;
-                          "
-                        />
-                      </div>
-                    </form>
+            <section id="register-section" class="register">
+              <div class="d-flex flex-column align-items-center gap-4">
+                <div class="d-flex justify-content-center">
+                  <div class="buttons-wrapper d-flex rounded-pill p-1">
+                    <a
+                      href="../004 (register)/index.html"
+                      class="fw-semibold rounded-pill"
+                      id="natural"
+                      style="
+                        border: none;
+                        background-color: inherit;
+                        padding: 6px 12px;
+                        color: #7c9307;
+                        text-decoration: none;
+                      "
+                    >
+                      ثبت نام حقیقی
+                    </a>
+                    <a
+                      href=""
+                      class="fw-semibold rounded-pill"
+                      id="legal"
+                      style="
+                        background: #7c9307;
+                        color: #f6fae8;
+                        border: none;
+                        padding: 6px 12px;
+                        text-decoration: none;
+                      "
+                    >
+                      ثبت نام حقوقی
+                    </a>
                   </div>
                 </div>
+                <div class="">
+                  <img src="assets/images/users.png" width="120" alt="" />
+                </div>
+                <div class="informations-wrapper">
+                  <div class="info d-flex justify-content-center" id="natural">
+                    <div class="" style="width: 640px">
+                      <form method="POST" action="/api/register">
+                        <div
+                          class="mb-3"
+                          style="display: flex; flex-wrap: wrap; gap: 20px"
+                        >
+                          <div class="input-wrapper" style="flex: 1">
+                            <input
+                              type="text"
+                              name="company_name"
+                              placeholder=" "
+                              style="width: 100%"
+                              required
+                              oninvalid="
+                                this.setCustomValidity(
+                                  'لطفاً نام کامل شرکت را وارد کنید',
+                                )
+                              "
+                              oninput="this.setCustomValidity('')"
+                            />
+                            <label
+                              >نام کامل شرکت<span class="required"
+                                >*</span
+                              ></label
+                            >
+                          </div>
+                          <div class="input-wrapper" style="flex: 1">
+                            <input
+                              type="text"
+                              name="company_national_code"
+                              placeholder=" "
+                              style="width: 100%"
+                              required
+                              oninvalid="
+                                this.setCustomValidity(
+                                  'لطفاً شناسه ملی شرکت را وارد کنید',
+                                )
+                              "
+                              oninput="this.setCustomValidity('')"
+                            />
+                            <label
+                              >شناسه ملی شرکت<span class="required"
+                                >*</span
+                              ></label
+                            >
+                          </div>
+                        </div>
 
-                <div
-                  class="info d-none"
-                  id="legal"
-                  style="background-color: #f6fae8"
-                ></div>
+                        <div
+                          class="mb-3"
+                          style="display: flex; flex-wrap: wrap; gap: 20px"
+                        >
+                          <div class="input-wrapper" style="flex: 1">
+                            <input
+                              type="text"
+                              name="company_fiscal_code"
+                              placeholder=" "
+                              style="width: 100%"
+                              required
+                              oninvalid="
+                                this.setCustomValidity(
+                                  'لطفاً کد اقتصادی شرکت را وارد کنید',
+                                )
+                              "
+                              oninput="this.setCustomValidity('')"
+                            />
+                            <label
+                              >کد اقتصادی شرکت<span class="required"
+                                >*</span
+                              ></label
+                            >
+                          </div>
+                          <div class="input-wrapper" style="flex: 1">
+                            <input
+                              type="tel"
+                              name="mobile"
+                              placeholder=" "
+                              style="width: 100%"
+                              required
+                              oninvalid="
+                                this.setCustomValidity(
+                                  'لطفاً شماره موبایل را وارد کنید',
+                                )
+                              "
+                              oninput="this.setCustomValidity('')"
+                            />
+                            <label
+                              >شماره موبایل<span class="required"
+                                >*</span
+                              ></label
+                            >
+                          </div>
+                        </div>
+
+                        <div
+                          class="mb-3"
+                          style="display: flex; flex-wrap: wrap; gap: 20px"
+                        >
+                          <div class="input-wrapper" style="flex: 1">
+                            <input
+                              type="tel"
+                              name="phone"
+                              placeholder=" "
+                              style="width: 100%"
+                              required
+                              oninvalid="
+                                this.setCustomValidity(
+                                  'لطفاً شماره ثابت را وارد کنید',
+                                )
+                              "
+                              oninput="this.setCustomValidity('')"
+                            />
+                            <label
+                              >شماره ثابت<span class="required">*</span></label
+                            >
+                          </div>
+                          <div class="input-wrapper" style="flex: 1">
+                            <input
+                              type="text"
+                              name="postal_code"
+                              placeholder=" "
+                              style="width: 100%"
+                              required
+                              oninvalid="
+                                this.setCustomValidity(
+                                  'لطفاً کد پستی را وارد کنید',
+                                )
+                              "
+                              oninput="this.setCustomValidity('')"
+                            />
+                            <label
+                              >کد پستی<span class="required">*</span></label
+                            >
+                          </div>
+                        </div>
+
+                        <div
+                          class="mb-3"
+                          style="display: flex; flex-wrap: wrap; gap: 20px"
+                        >
+                          <div class="input-wrapper" style="flex: 1">
+                            <input
+                              type="text"
+                              name="address"
+                              placeholder=" "
+                              style="width: 100%"
+                              required
+                              oninvalid="
+                                this.setCustomValidity(
+                                  'لطفاً نشانی را وارد کنید',
+                                )
+                              "
+                              oninput="this.setCustomValidity('')"
+                            />
+                            <label>نشانی<span class="required">*</span></label>
+                          </div>
+                        </div>
+
+                        <div
+                          class="mb-3"
+                          style="display: flex; flex-wrap: wrap; gap: 20px"
+                        >
+                          <div class="input-wrapper" style="flex: 1">
+                            <input
+                              type="password"
+                              name="password"
+                              placeholder=" "
+                              style="width: 100%"
+                              required
+                              oninvalid="
+                                this.setCustomValidity(
+                                  'لطفاً رمز عبور را وارد کنید',
+                                )
+                              "
+                              oninput="this.setCustomValidity('')"
+                            />
+                            <label
+                              >رمز عبور<span class="required">*</span></label
+                            >
+                          </div>
+                          <div class="input-wrapper" style="flex: 1">
+                            <input
+                              type="password"
+                              name="password_confirmation"
+                              placeholder=" "
+                              style="width: 100%"
+                              required
+                              oninvalid="
+                                this.setCustomValidity(
+                                  'لطفاً تکرار رمز عبور را وارد کنید',
+                                )
+                              "
+                              oninput="this.setCustomValidity('')"
+                            />
+                            <label
+                              >تکرار رمز عبور<span class="required"
+                                >*</span
+                              ></label
+                            >
+                          </div>
+                        </div>
+
+                        <div
+                          class="mt-4"
+                          style="display: flex; justify-content: center"
+                        >
+                          <input
+                            class="register-btn"
+                            type="submit"
+                            value="ثبت نام"
+                          />
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                  <div
+                    class="info d-none"
+                    id="legal"
+                    style="background-color: #f6fae8"
+                  ></div>
+                </div>
               </div>
-            </div>
+            </section>
           </main>
+
+          <footer></footer>
         </div>
       </div>
-    </div>
 
-    <header
-      class="d-lg-none position-fixed top-0 start-0 end-0"
-      style="z-index: 1030"
-    >
-      <div id="festival-banner-wrapper">
-        <a href="#" target="_blank" id="festival-banner">
-          <div>
-            <img
-              loading="eager"
-              src="assets/images/ad-banner.gif"
-              width="1920"
-              height="40"
-              alt="festival-banner"
-              class="w-100 d-block object-fit-cover"
-            />
-          </div>
-        </a>
-      </div>
-      <div class="topbar border-bottom">
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="topbar-logo">
-            <a href="#">
-              <img src="assets/images/logo.png" alt="logo" />
+      <div class="bottombar fixed-bottom border-top border-2 d-lg-none">
+        <ul class="bottombar-nav">
+          <li class="bottom-nav-item active">
+            <a href="https://www.taminfalat.com/" class="bottom-nav-link gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="26"
+                height="26"
+                color="currentColor"
+                fill="none"
+                stroke="rgb(159, 159, 169)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M3 11.9896V14.5C3 17.7998 3 19.4497 4.02513 20.4749C5.05025 21.5 6.70017 21.5 10 21.5H14C17.2998 21.5 18.9497 21.5 19.9749 20.4749C21 19.4497 21 17.7998 21 14.5V11.9896C21 10.3083 21 9.46773 20.6441 8.74005C20.2882 8.01237 19.6247 7.49628 18.2976 6.46411L16.2976 4.90855C14.2331 3.30285 13.2009 2.5 12 2.5C10.7991 2.5 9.76689 3.30285 7.70242 4.90855L5.70241 6.46411C4.37533 7.49628 3.71179 8.01237 3.3559 8.74005C3 9.46773 3 10.3083 3 11.9896Z"
+                />
+                <path
+                  d="M15 21.5V16.5C15 15.0858 15 14.3787 14.5607 13.9393C14.1213 13.5 13.4142 13.5 12 13.5C10.5858 13.5 9.87868 13.5 9.43934 13.9393C9 14.3787 9 15.0858 9 16.5V21.5"
+                />
+              </svg>
+              <span>خانه</span>
             </a>
-          </div>
-          <div class="topbar-search">
-            <button id="searchBtn">
-              <span id="searchText"></span>
-              <i class="bi bi-search"></i>
+          </li>
+          <li class="bottom-nav-item menu-btn-mobile-item">
+            <button class="bottom-nav-link menu-btn-mobile gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="26"
+                height="26"
+                color="currentColor"
+                fill="none"
+                stroke="rgb(159, 159, 169)"
+                stroke-width="1.5"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M3.88884 9.66294C4.39329 10 5.09552 10 6.49998 10C7.90445 10 8.60668 10 9.11113 9.66294C9.32951 9.51702 9.51701 9.32952 9.66292 9.11114C9.99998 8.60669 9.99998 7.90446 9.99998 6.5C9.99998 5.09554 9.99998 4.39331 9.66292 3.88886C9.51701 3.67048 9.32951 3.48298 9.11113 3.33706C8.60668 3 7.90445 3 6.49998 3C5.09552 3 4.39329 3 3.88884 3.33706C3.67046 3.48298 3.48296 3.67048 3.33705 3.88886C2.99998 4.39331 2.99998 5.09554 2.99998 6.5C2.99998 7.90446 2.99998 8.60669 3.33705 9.11114C3.48296 9.32952 3.67046 9.51702 3.88884 9.66294Z"
+                />
+                <path
+                  d="M14.8888 9.66294C15.3933 10 16.0955 10 17.5 10C18.9044 10 19.6067 10 20.1111 9.66294C20.3295 9.51702 20.517 9.32952 20.6629 9.11114C21 8.60669 21 7.90446 21 6.5C21 5.09554 21 4.39331 20.6629 3.88886C20.517 3.67048 20.3295 3.48298 20.1111 3.33706C19.6067 3 18.9044 3 17.5 3C16.0955 3 15.3933 3 14.8888 3.33706C14.6705 3.48298 14.483 3.67048 14.337 3.88886C14 4.39331 14 5.09554 14 6.5C14 7.90446 14 8.60669 14.337 9.11114C14.483 9.32952 14.6705 9.51702 14.8888 9.66294Z"
+                />
+                <path
+                  d="M3.88884 20.6629C4.39329 21 5.09552 21 6.49998 21C7.90445 21 8.60668 21 9.11113 20.6629C9.32951 20.517 9.51701 20.3295 9.66292 20.1111C9.99998 19.6067 9.99998 18.9045 9.99998 17.5C9.99998 16.0955 9.99998 15.3933 9.66292 14.8889C9.51701 14.6705 9.32951 14.483 9.11113 14.3371C8.60668 14 7.90445 14 6.49998 14C5.09552 14 4.39329 14 3.88884 14.3371C3.67046 14.483 3.48296 14.6705 3.33705 14.8889C2.99998 15.3933 2.99998 16.0955 2.99998 17.5C2.99998 18.9045 2.99998 19.6067 3.33705 20.1111C3.48296 20.3295 3.67046 20.517 3.88884 20.6629Z"
+                />
+                <path
+                  d="M14.8888 20.6629C15.3933 21 16.0955 21 17.5 21C18.9044 21 19.6067 21 20.1111 20.6629C20.3295 20.517 20.517 20.3295 20.6629 20.1111C21 19.6067 21 18.9045 21 17.5C21 16.0955 21 15.3933 20.6629 14.8889C20.517 14.6705 20.3295 14.483 20.1111 14.3371C19.6067 14 18.9044 14 17.5 14C16.0955 14 15.3933 14 14.8888 14.3371C14.6705 14.483 14.483 14.6705 14.337 14.8889C14 15.3933 14 16.0955 14 17.5C14 18.9045 14 19.6067 14.337 20.1111C14.483 20.3295 14.6705 20.517 14.8888 20.6629Z"
+                />
+              </svg>
+              <span>دسته بندی</span>
             </button>
-          </div>
+          </li>
+          <li class="bottom-nav-item">
+            <a
+              href="https://www.taminfalat.com/cart"
+              class="bottom-nav-link gap-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="26"
+                height="26"
+                color="currentColor"
+                fill="none"
+                stroke="rgb(159, 159, 169)"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M8 16L16.7201 15.2733C19.4486 15.046 20.0611 14.45 20.3635 11.7289L21 6"
+                  stroke-linecap="round"
+                />
+                <path d="M6 6H22" stroke-linecap="round" />
+                <circle cx="6" cy="20" r="2" />
+                <circle cx="17" cy="20" r="2" />
+                <path d="M8 20L15 20" stroke-linecap="round" />
+                <path
+                  d="M2 2H2.966C3.91068 2 4.73414 2.62459 4.96326 3.51493L7.93852 15.0765C8.08887 15.6608 7.9602 16.2797 7.58824 16.7616L6.63213 18"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <span>سبد خرید</span>
+            </a>
+          </li>
+          <li class="bottom-nav-item">
+            <a
+              href="https://www.taminfalat.com/blog"
+              class="bottom-nav-link gap-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="26"
+                height="26"
+                color="currentColor"
+                fill="none"
+                stroke="rgb(159, 159, 169)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M18 15V9C18 6.17157 18 4.75736 17.1213 3.87868C16.2426 3 14.8284 3 12 3H8C5.17157 3 3.75736 3 2.87868 3.87868C2 4.75736 2 6.17157 2 9V15C2 17.8284 2 19.2426 2.87868 20.1213C3.75736 21 5.17157 21 8 21H20"
+                />
+                <path d="M6 8L14 8" />
+                <path d="M6 12L14 12" />
+                <path d="M6 16L10 16" />
+                <path
+                  d="M18 8H19C20.4142 8 21.1213 8 21.5607 8.43934C22 8.87868 22 9.58579 22 11V19C22 20.1046 21.1046 21 20 21C18.8954 21 18 20.1046 18 19V8Z"
+                />
+              </svg>
+              <span>بلاگ</span>
+            </a>
+          </li>
+          <li class="bottom-nav-item">
+            <a
+              href="https://www.taminfalat.com/entry"
+              class="bottom-nav-link gap-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="26"
+                height="26"
+                color="currentColor"
+                fill="none"
+                stroke="rgb(159, 159, 169)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M17 8.5C17 5.73858 14.7614 3.5 12 3.5C9.23858 3.5 7 5.73858 7 8.5C7 11.2614 9.23858 13.5 12 13.5C14.7614 13.5 17 11.2614 17 8.5Z"
+                />
+                <path
+                  d="M19 20.5C19 16.634 15.866 13.5 12 13.5C8.13401 13.5 5 16.634 5 20.5"
+                />
+              </svg>
+              <span>ورود</span>
+            </a>
+          </li>
+        </ul>
+        <div
+          class="bottombar-support d-flex justify-content-center align-items-center"
+        >
+          <a href="tel:02191001214" class="d-flex align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              color="current"
+              fill="none"
+              stroke="#fff"
+              stroke-width="1.5"
+            >
+              <path
+                d="M17 10.8045C17 10.4588 17 10.286 17.052 10.132C17.2032 9.68444 17.6018 9.51076 18.0011 9.32888C18.45 9.12442 18.6744 9.02219 18.8968 9.0042C19.1493 8.98378 19.4022 9.03818 19.618 9.15929C19.9041 9.31984 20.1036 9.62493 20.3079 9.87302C21.2513 11.0188 21.7229 11.5918 21.8955 12.2236C22.0348 12.7334 22.0348 13.2666 21.8955 13.7764C21.6438 14.6979 20.8485 15.4704 20.2598 16.1854C19.9587 16.5511 19.8081 16.734 19.618 16.8407C19.4022 16.9618 19.1493 17.0162 18.8968 16.9958C18.6744 16.9778 18.45 16.8756 18.0011 16.6711C17.6018 16.4892 17.2032 16.3156 17.052 15.868C17 15.714 17 15.5412 17 15.1955V10.8045Z"
+              />
+              <path
+                d="M7 10.8046C7 10.3694 6.98778 9.97821 6.63591 9.6722C6.50793 9.5609 6.33825 9.48361 5.99891 9.32905C5.55001 9.12458 5.32556 9.02235 5.10316 9.00436C4.43591 8.9504 4.07692 9.40581 3.69213 9.87318C2.74875 11.019 2.27706 11.5919 2.10446 12.2237C1.96518 12.7336 1.96518 13.2668 2.10446 13.7766C2.3562 14.6981 3.15152 15.4705 3.74021 16.1856C4.11129 16.6363 4.46577 17.0475 5.10316 16.996C5.32556 16.978 5.55001 16.8757 5.99891 16.6713C6.33825 16.5167 6.50793 16.4394 6.63591 16.3281C6.98778 16.0221 7 15.631 7 15.1957V10.8046Z"
+              />
+              <path
+                d="M5 9C5 5.68629 8.13401 3 12 3C15.866 3 19 5.68629 19 9"
+                stroke-linecap="square"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M19 17V17.8C19 19.5673 17.2091 21 15 21H13"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p class="m-0" style="font-size: 14px">پشتیبانی</p>
+          </a>
         </div>
-      </div>
-    </header>
-
-    <div class="bottombar fixed-bottom border-top border-2 d-lg-none">
-      <ul class="bottombar-nav">
-        <li class="bottom-nav-item active">
-          <a href="#" class="bottom-nav-link">
-            <i class="bi bi-house-door"></i>
-            <span>خانه</span>
-          </a>
-        </li>
-        <li class="bottom-nav-item">
-          <a href="" class="bottom-nav-link">
-            <i class="bi bi-grid"></i>
-            <span>دسته بندی</span>
-          </a>
-        </li>
-        <li class="bottom-nav-item">
-          <a href="" class="bottom-nav-link">
-            <i class="bi bi-cart3"></i>
-            <span>سبد خرید</span>
-          </a>
-        </li>
-        <li class="bottom-nav-item">
-          <a href="" class="bottom-nav-link">
-            <i class="bi bi-newspaper"></i>
-            <span>بلاگ</span>
-          </a>
-        </li>
-        <li class="bottom-nav-item">
-          <a href="" class="bottom-nav-link">
-            <i class="bi bi-person-circle"></i>
-            <span>ورود</span>
-          </a>
-        </li>
-      </ul>
-      <div
-        class="bottombar-support d-flex justify-content-center align-items-center"
-      >
-        <a href="tel:02191001214" class="d-flex align-items-center">
-          <img src="assets/images/support.png" width="30" height="30" alt="" />
-          <p class="m-0" style="font-size: 14px">پشتیبانی</p>
-        </a>
       </div>
     </div>
 
@@ -463,11 +1608,39 @@
               data-parsley-id="4"
             />
           </form>
-          
-          <i class="bi bi-search"></i>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            color="currentColor"
+            fill="none"
+            stroke="#a8cf45"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M17 17L21 21" />
+            <path
+              d="M19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C15.4183 19 19 15.4183 19 11Z"
+            />
+          </svg>
         </div>
         <button class="search-overlay__close" id="closeSearch">
-          <i class="bi bi-x"></i>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            color="currentColor"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M18 6L6.00081 17.9992M17.9992 18L6 6.00085" />
+          </svg>
         </button>
       </div>
       <div class="search-overlay__popular">
@@ -475,16 +1648,1012 @@
           <p class="m-0 py-3">جستجوهای محبوب</p>
         </div>
         <div class="search-overlay__links">
-          <a class="search-overlay__link" href="#">دستمال کاغذی</a>
-          <a class="search-overlay__link" href="#">زونکن</a>
-          <a class="search-overlay__link" href="#">کاغذ A4</a>
-          <a class="search-overlay__link" href="#">قند</a>
-          <a class="search-overlay__link" href="#">کپی مکس</a>
-          <a class="search-overlay__link" href="#">مایع دستشویی</a>
-          <a class="search-overlay__link" href="#">چای</a>
-          <a class="search-overlay__link" href="#">خودکار</a>
-          <a class="search-overlay__link" href="#">کیسه زباله</a>
-          <a class="search-overlay__link" href="#">شکلات</a>
+          <a
+            class="search-overlay__link"
+            href="https://www.taminfalat.com/categorylist/%D8%AF%D8%B3%D8%AA%D9%85%D8%A7%D9%84-%D9%88-%D8%AD%D9%88%D9%84%D9%87"
+            >دستمال کاغذی</a
+          >
+          <a
+            class="search-overlay__link"
+            href="https://www.taminfalat.com/categorylist/%D8%B2%D9%88%D9%86%DA%A9%D9%86-%DA%A9%D9%84%D8%A7%D8%B3%D9%88%D8%B1-%D9%BE%D9%88%D8%B4%D9%87-%DA%A9%D8%A7%D9%88%D8%B1-%DA%A9%D9%84%DB%8C%D8%B1%D8%A8%D9%88%DA%A9-1"
+            >زونکن</a
+          >
+          <a
+            class="search-overlay__link"
+            href="https://www.taminfalat.com/categorylist/%DA%A9%D8%A7%D8%BA%D8%B0-%D8%A7%D8%AF%D8%A7%D8%B1%DB%8C-1/1/param_122/A4"
+            >کاغذ A4</a
+          >
+          <a
+            class="search-overlay__link"
+            href="https://www.taminfalat.com/categorylist/%D9%82%D9%86%D8%AF"
+            >قند</a
+          >
+          <a
+            class="search-overlay__link"
+            href="https://www.taminfalat.com/productlist?brand=103"
+            >کپی مکس</a
+          >
+          <a
+            class="search-overlay__link"
+            href="https://www.taminfalat.com/categorylist/%D9%85%D8%A7%DB%8C%D8%B9-%D8%AF%D8%B3%D8%AA%D8%B4%D9%88%DB%8C%DB%8C-1"
+            >مایع دستشویی</a
+          >
+          <a
+            class="search-overlay__link"
+            href="https://www.taminfalat.com/categorylist/%DA%86%D8%A7%DB%8C-%D8%B3%DB%8C%D8%A7%D9%87-1"
+            >چای</a
+          >
+          <a
+            class="search-overlay__link"
+            href="https://www.taminfalat.com/categorylist/%D8%AE%D9%88%D8%AF%DA%A9%D8%A7%D8%B1-%D9%85%D8%AF%D8%A7%D8%AF-%D8%B1%D9%88%D8%A7%D9%86-%D9%86%D9%88%DB%8C%D8%B3-%D9%85%D8%A7%DA%98%DB%8C%DA%A9"
+            >خودکار</a
+          >
+          <a
+            class="search-overlay__link"
+            href="https://www.taminfalat.com/categorylist/%DA%A9%DB%8C%D8%B3%D9%87-%D8%B2%D8%A8%D8%A7%D9%84%D9%87-1"
+            >کیسه زباله</a
+          >
+          <a
+            class="search-overlay__link"
+            href="https://www.taminfalat.com/categorylist/%D8%B4%DA%A9%D9%84%D8%A7%D8%AA-%D9%88-%D8%A2%D8%A8%D9%86%D8%A8%D8%A7%D8%AA"
+            >شکلات</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-overlay-mobile d-lg-none" id="menuOverlayMobile">
+      <div
+        class="d-flex align-items-center justify-content-between border-bottom p-2"
+      >
+        <div style="width: 40px; height: 40px"></div>
+        <a href="https://www.taminfalat.com/">
+          <img
+            src="assets/images/logo.png"
+            width="110px
+                  "
+            alt=""
+          />
+        </a>
+        <button class="menu-overlay__close-mobile" id="closeMenu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            color="currentColor"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M18 6L6.00081 17.9992M17.9992 18L6 6.00085" />
+          </svg>
+        </button>
+      </div>
+      <div class="menu-overlay__content-mobile">
+        <div class="row">
+          <div class="col-3 p-0 border-start">
+            <div class="d-flex menu-overlay__btns-wrapper flex-column">
+              <div
+                class="d-flex align-items-center border-bottom"
+                style="height: 120px"
+              >
+                <button
+                  class="p-2 menu-overlay__btn active"
+                  data-target="officeSupplies"
+                >
+                  <div
+                    class="d-flex flex-column align-items-center"
+                    style="gap: 6px"
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        background-color: #f7f7f7;
+                        padding: 8px;
+                        border-radius: 50%;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        height="20"
+                        color="currentColor"
+                        fill="none"
+                        stroke="#2563EB"
+                        stroke-width="1.5"
+                      >
+                        <path d="M3 10H21" stroke-linejoin="round" />
+                        <path
+                          d="M15 6L17 6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M21 13V11C21 6.75736 21 4.63604 19.682 3.31802C18.364 2 16.2426 2 12 2C7.75736 2 5.63604 2 4.31802 3.31802C3 4.63604 3 6.75736 3 11V13C3 17.2426 3 19.364 4.31802 20.682C5.63604 22 7.75736 22 12 22C16.2426 22 18.364 22 19.682 20.682C21 19.364 21 17.2426 21 13Z"
+                        />
+                        <path
+                          d="M7 14H7.52632M11.7368 14H12.2632M16.4737 14H17"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M7 18H7.52632M11.7368 18H12.2632M16.4737 18H17"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <span style="font-size: 12px">لوازم و ملزومات اداری</span>
+                  </div>
+                </button>
+              </div>
+              <div
+                class="d-flex align-items-center border-bottom"
+                style="height: 120px"
+              >
+                <button class="p-2 menu-overlay__btn" data-target="cleaning">
+                  <div
+                    class="d-flex flex-column align-items-center"
+                    style="gap: 6px"
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        background-color: #f7f7f7;
+                        padding: 8px;
+                        border-radius: 50%;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        height="20"
+                        color="currentColor"
+                        fill="none"
+                        stroke="#0D9488"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                      >
+                        <path
+                          d="M4.5 13C4.5 10.2386 6.73858 8 9.5 8C12.2614 8 14.5 10.2386 14.5 13V18C14.5 19.8856 14.5 20.8284 13.9142 21.4142C13.3284 22 12.3856 22 10.5 22H8.5C6.61438 22 5.67157 22 5.08579 21.4142C4.5 20.8284 4.5 19.8856 4.5 18V13Z"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M14.5 13.1122C10.8607 9.83944 8.89093 14.9405 4.5 13.8418"
+                        />
+                        <path
+                          d="M7.5 8V7C7.5 6.05719 7.5 5.58579 7.79289 5.29289C8.08579 5 8.55719 5 9.5 5C10.4428 5 10.9142 5 11.2071 5.29289C11.5 5.58579 11.5 6.05719 11.5 7V8"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M9.5 5V2M9.5 2H7.5M9.5 2H12.9229C13.9117 2 14.7493 2.39009 15.5 3"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M19.4414 8.97336C19.671 9.84608 19.2059 10.7313 18.4026 10.9505C17.5994 11.1697 16.7621 10.64 16.5325 9.76726C16.303 8.89454 17.3634 7 17.3634 7C17.3634 7 19.2118 8.10063 19.4414 8.97336Z"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <span style="font-size: 12px">بهداشتی و نظافتی</span>
+                  </div>
+                </button>
+              </div>
+              <div
+                class="d-flex align-items-center border-bottom"
+                style="height: 120px"
+              >
+                <button class="p-2 menu-overlay__btn" data-target="snacks">
+                  <div
+                    class="d-flex flex-column align-items-center"
+                    style="gap: 6px"
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        background-color: #f7f7f7;
+                        padding: 8px;
+                        border-radius: 50%;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        height="20"
+                        color="currentColor"
+                        fill="none"
+                        stroke="#EA580C "
+                        stroke-width="1.5"
+                      >
+                        <path
+                          d="M16.2006 14.6886L9.31135 7.79939C8.84911 7.33715 8.61799 7.10603 8.33269 7.03327C8.22784 7.00653 8.11954 6.99581 8.01149 7.00147C7.71745 7.01686 7.44549 7.19817 6.90157 7.56078L6.76211 7.65376C5.65941 8.38889 5.10805 8.75646 5.02086 9.19212C4.97402 9.42615 5.00656 9.66912 5.11333 9.88258C5.31208 10.28 5.94072 10.4895 7.19799 10.9086C7.60207 11.0433 7.80411 11.1106 7.95873 11.2387C8.04473 11.3099 8.11907 11.3942 8.17908 11.4883C8.287 11.6576 8.32876 11.8665 8.4123 12.2841L8.68235 13.6344C8.81834 14.3143 8.88633 14.6543 9.11602 14.884C9.34571 15.1137 9.68566 15.1817 10.3656 15.3176L11.7159 15.5877C12.1335 15.6712 12.3424 15.713 12.5117 15.8209C12.6058 15.8809 12.6901 15.9553 12.7613 16.0413C12.8894 16.1959 12.9567 16.3979 13.0914 16.802C13.5105 18.0593 13.72 18.6879 14.1174 18.8867C14.3309 18.9934 14.5738 19.026 14.8079 18.9791C15.2435 18.8919 15.6111 18.3406 16.3462 17.2379L16.4392 17.0984C16.8018 16.5545 16.9831 16.2825 16.9985 15.9885C17.0042 15.8805 16.9935 15.7722 16.9667 15.6673C16.894 15.382 16.6628 15.1509 16.2006 14.6886Z"
+                        />
+                        <path
+                          d="M13.5 18L11.7256 19.8557C10.2961 21.2852 9.5813 22 8.69309 22C7.80489 22 7.09012 21.2852 5.66057 19.8557L4.14431 18.3394C2.71477 16.9099 2 16.1951 2 15.3069C2 14.4187 2.71477 13.7039 4.14431 12.2744L6 10.5"
+                        />
+                        <path
+                          d="M9 7.70827L12.6459 4.06241C14.0208 2.68747 14.7083 2 15.5626 2C16.4168 2 17.1043 2.68747 18.4792 4.06241L19.9376 5.52076C21.3125 6.8957 22 7.58317 22 8.43745C22 9.29173 21.3125 9.9792 19.9376 11.3541L16.2917 15"
+                        />
+                        <path
+                          d="M19.6003 4.39996L12.4003 11.6M12 4L20 12"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <span style="font-size: 12px">خوراکی های اداری</span>
+                  </div>
+                </button>
+              </div>
+              <div
+                class="d-flex align-items-center border-bottom"
+                style="height: 120px"
+              >
+                <button class="p-2 menu-overlay__btn" data-target="stationary">
+                  <div
+                    class="d-flex flex-column align-items-center"
+                    style="gap: 6px"
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        background-color: #f7f7f7;
+                        padding: 8px;
+                        border-radius: 50%;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        height="20"
+                        color="currentColor"
+                        fill="none"
+                        stroke="#9333EA "
+                        stroke-width="1.5"
+                      >
+                        <path
+                          d="M21 17.4C21 19.0971 21 19.9456 20.3491 20.4728C19.6983 21 18.6507 21 16.5556 21H15.4444C13.3493 21 12.3017 21 11.6509 20.4728C11 19.9456 11 19.0971 11 17.4L11 6.6C11 4.90294 11 4.05442 11.6509 3.52721C12.3017 3 13.3493 3 15.4444 3L16.5556 3C18.6507 3 19.6983 3 20.3491 3.52721C21 4.05442 21 4.90294 21 6.6L21 17.4Z"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 5.04096C3 4.07884 3 3.59778 3.29289 3.29889C3.58579 3 4.05719 3 5 3C5.94281 3 6.41421 3 6.70711 3.29889C7 3.59778 7 4.07884 7 5.04096L7 15.8877C7 16.7952 7 17.2489 6.92429 17.6878C6.855 18.0895 6.73877 18.4813 6.57807 18.8547C6.40249 19.2628 6.15585 19.6403 5.66258 20.3954C5.44279 20.7318 5.33289 20.9 5.19487 20.9597C5.0703 21.0134 4.9297 21.0134 4.80513 20.9597C4.66711 20.9 4.55721 20.7318 4.33742 20.3954C3.84415 19.6403 3.59751 19.2628 3.42193 18.8548C3.26123 18.4813 3.14499 18.0895 3.07571 17.6878C3 17.2489 3 16.7952 3 15.8877L3 5.04096Z"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M11.5 16.5L13.5 16.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M11.5 12L13.5 12"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M11.5 7.5L13.5 7.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M7 7C7 7.55228 6.10457 8 5 8C3.89543 8 3 7.55228 3 7"
+                        />
+                      </svg>
+                    </div>
+                    <span style="font-size: 12px">لوازم تحریر</span>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-9">
+            <ul class="top-menu-mobile row list-unstyled pt-2">
+              <li class="col-12">
+                <ul
+                  class="menu-overlay__category p-0 list-unstyled d-flex flex-column gap-4"
+                  id="officeSupplies"
+                >
+                  <li>
+                    <a
+                      href="https://www.taminfalat.com/categorylist/لوازم-اداری-1"
+                      >لوازم اداری</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/خط-کش-پرگار"
+                        >
+                          خط کش و پرگار</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/سطل-زیرپایی"
+                        >
+                          سطل، زیرپایی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/ماشین-حساب"
+                        >
+                          ماشین حساب</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/کتابخانه-اداری"
+                        >
+                          کتابخانه اداری</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/آلبوم-و-جا-کارتی"
+                        >
+                          آلبوم و جا کارتی</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.taminfalat.com/categorylist/لوازم-جانبی-کامپیوتر"
+                      >لوازم جانبی</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/کارتریج-تونر"
+                        >
+                          کارتریج، تونر</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/سی-دی-دی-وی-دی"
+                        >
+                          سی دی، دی وی دی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/پد-موس-زیر-مانیتوری"
+                        >
+                          پد موس، زیر مانیتوری</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.taminfalat.com/categorylist/باطری">
+                          باطری</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/فلش-مموری"
+                        >
+                          فلش مموری</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="https://www.taminfalat.com/categorylist/میز-1"
+                      >میز و صندلی</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/کارشناسی"
+                        >
+                          کارشناسی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/مدیریتی"
+                        >
+                          مدیریتی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/میز-پیشخوان"
+                        >
+                          میز پیشخوان</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/میز-منشی"
+                        >
+                          میز منشی</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.taminfalat.com/categorylist/صندلی">
+                          صندلی</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul
+                  class="menu-overlay__category p-0 list-unstyled d-flex flex-column gap-4 d-none"
+                  id="cleaning"
+                >
+                  <li>
+                    <a
+                      href="https://www.taminfalat.com/categorylist/دستمال-و-حوله"
+                      >دستمال کاغذی</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/دستمال-رومیزی"
+                        >
+                          دستمال رومیزی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/دستمال-حوله-ای-1"
+                        >
+                          دستمال حوله ای</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/دستمال-توالت"
+                        >
+                          دستمال توالت</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/دستمال-مخزنی"
+                        >
+                          دستمال مخزنی</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.taminfalat.com/categorylist/شوینده-دست-1"
+                      >انواع شوینده</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/مایع-دستشویی-1"
+                        >
+                          مایع دستشویی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/مایع-ظرفشویی"
+                        >
+                          مایع ظرفشویی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/شیشه-شور-چند-منظوره-1"
+                        >
+                          شیشه شوی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/جرمگیر-سفید-کننده"
+                        >
+                          جرمگیر، سفید کننده</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/پودر-ماشینی-پودر-دستی-1"
+                        >
+                          پودر ماشینی، پودر دستی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/پاک-کننده-سطوح"
+                        >
+                          پاک کننده سطوح</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.taminfalat.com/categorylist/ملزومات-نظافت"
+                      >ملزومات نظافت</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/خوشبو-کننده-هوا"
+                        >
+                          خوشبو کننده هوا</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/دستمال-نظافت"
+                        >
+                          دستمال تنظیف</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/تی-جارو-فرچه-1"
+                        >
+                          تی، جارو، فرچه</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/پد-توالت-فرنگی-و-قرص"
+                        >
+                          قرص و پد توالت فرنگی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/اسکاچ-ابر-سیم"
+                        >
+                          اسکاچ، ابر، سیم</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/لوله-باز-کن-1"
+                        >
+                          لوله باز کن</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/ضدعفونی-کننده"
+                        >
+                          ضدعفونی کننده</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.taminfalat.com/categorylist/ظروف-یکبار-مصرف"
+                      >یکبار مصرف</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/دستکش-و-ماسک"
+                        >
+                          دستکش</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/کیسه-زباله-1"
+                        >
+                          کیسه زباله</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/سفره-لیوان"
+                        >
+                          سفره</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/کیسه-فریزر-1"
+                        >
+                          کیسه فریزر</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.taminfalat.com/categorylist/ماسک">
+                          ماسک</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/لیوان-یکبار-مصرف"
+                        >
+                          لیوان یکبار مصرف</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/ظروف-یکبار-مصرف-2"
+                        >
+                          ظروف یکبار مصرف</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/نایلکس-دسته-دار"
+                        >
+                          نایلکس دسته دار</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul
+                  class="menu-overlay__category p-0 list-unstyled d-flex flex-column gap-4 d-none"
+                  id="snacks"
+                >
+                  <li>
+                    <a
+                      href="https://www.taminfalat.com/categorylist/چای-و-دمنوش-1"
+                      >نوشیدنی</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/قهوه-و-نسکافه-1"
+                        >
+                          قهوه و نسکافه</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/چای-سیاه-1"
+                        >
+                          چای سیاه</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/آب-معدنی-1"
+                        >
+                          آب معدنی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/شربت-1"
+                        >
+                          شربت</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/دمنوش-1"
+                        >
+                          دمنوش</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/آبمیوه"
+                        >
+                          آبمیوه</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.taminfalat.com/categorylist/بیسکویت-و-تنقلات"
+                      >بیسکویت و تنقلات</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/بیسکویت-ساده"
+                        >
+                          بیسکویت ساده</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/بیسکویت-شکلاتی-1"
+                        >
+                          بیسکویت شکلاتی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/بیسکویت-طعم-دار"
+                        >
+                          بیسکویت طعم دار</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.taminfalat.com/categorylist/قند-شکر-نبات-روغن"
+                      >قند، شکر، نبات، روغن</a
+                    >
+                    <ul>
+                      <li>
+                        <a href="https://www.taminfalat.com/categorylist/قند">
+                          قند</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.taminfalat.com/categorylist/شکر">
+                          شکر</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.taminfalat.com/categorylist/روغن">
+                          روغن</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/نبات-1"
+                        >
+                          نبات</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.taminfalat.com/categorylist/برنج">
+                          برنج</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.taminfalat.com/categorylist/طعم-دهنده-1"
+                      >طعم دهنده</a
+                    >
+                    <ul>
+                      <li>
+                        <a href="https://www.taminfalat.com/categorylist/نمک-1">
+                          نمک</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.taminfalat.com/categorylist/فلفل">
+                          فلفل</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/سماق-1"
+                        >
+                          سماق</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.taminfalat.com/categorylist/رب-1">
+                          رب</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul
+                  class="menu-overlay__category p-0 list-unstyled d-flex flex-column gap-4 d-none"
+                  id="stationary"
+                >
+                  <li>
+                    <a
+                      href="https://www.taminfalat.com/categorylist/نوشت-افزار-1"
+                      >نوشت افزار</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/خودکار-مداد-روان-نویس-ماژیک"
+                        >
+                          خودکار و روان نویس</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/لاک-غلط-گیر-و-گچ"
+                        >
+                          لاک غلط گیر</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/پاک-کن-تراش"
+                        >
+                          پاک کن، تراش</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.taminfalat.com/categorylist/ماژیک">
+                          ماژیک</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.taminfalat.com/categorylist/مداد">
+                          مداد</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="https://www.taminfalat.com/categorylist/انواع-کاغذ"
+                      >انواع کاغذ</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/کاغذ-اداری-1"
+                        >
+                          کاغذ (A4,A3,A5)</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/پاکت-کاغذی-1"
+                        >
+                          پاکت کاغذی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/دفتر-دفتر-یادداشت-استیک-نوت"
+                        >
+                          استیک نوت</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/دفتر-اندیکاتور-معین-حضور-و-غیاب-ارسال-و-مراسلات-روزنامه-و-1"
+                        >
+                          دفتر اداری</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/رول-حرارتی"
+                        >
+                          رول حرارتی</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.taminfalat.com/categorylist/وسایل-رومیزی"
+                      >نظم دهنده</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/زونکن-کلاسور-پوشه-کاور-کلیربوک-1"
+                        >
+                          زونکن اداری</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/کارتابل-1"
+                        >
+                          کارتابل</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/کازیه-1"
+                        >
+                          کازیه</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/پایه-چسب-جاسوزنی"
+                        >
+                          پایه چسب و جاسوزنی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/جای-قلم-جا-یادداشت-زیر-تقویمی-تخته-شاسی-ذره-بین"
+                        >
+                          جای قلم، یادداشت و زیر تقویمی</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/تقویم-سررسید-1"
+                        >
+                          تقویم، سررسید</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/پوشه-کاور-کلیربوک"
+                        >
+                          پوشه، کاور، کلیربوک</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/کلاسور"
+                        >
+                          کلاسور</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.taminfalat.com/categorylist/ابزار-تحریر"
+                      >ابزار تحریر</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/طلق-شیرازه-دیوایدر"
+                        >
+                          طلق و شیرازه</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/ماشین-دوخت-پانچ-سوزن-کش-1"
+                        >
+                          منگنه و سوزن</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/قیچی-کاتر-تیغ-کاتر"
+                        >
+                          قیچی و کاتر</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/گیره-کلیپس-سوزن-مگنت"
+                        >
+                          گیره، کلیپس، مگنت</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/چسب-استامپ-جوهر-کاربن-کش-ابر"
+                        >
+                          استامپ، جوهر، کاربن</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.taminfalat.com/categorylist/پانچ-و-سوزن-کش"
+                        >
+                          پانچ و سوزن کش</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.taminfalat.com/categorylist/چسب">
+                          چسب</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
